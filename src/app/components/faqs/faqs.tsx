@@ -45,7 +45,7 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <section className="lg:w-35rem md:w-35rem w-80 mx-auto">
+    <section className="lg:w-35rem md:w-35rem text-black w-80 mx-auto">
       {items.map(({ title, content }, index) => (
         <div
           key={index}
