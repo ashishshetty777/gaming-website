@@ -13,6 +13,14 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontSize: {
+        '7.5xl': '88px',
+      },
+      lineHeight: {
+        78: '78px',
+        60: '60px',
+      },
+      letterSpacing: {},
       bottom: {
         minus: '-20px',
       },
@@ -48,6 +56,12 @@ const config: Config = {
         poppins: ['var(--poppins)'],
         poppinsLight: ['var(--poppinsLight)'],
         inter: ['var(--inter)'],
+      },
+    },
+    keyframes: {
+      'infinite-scroll': {
+        from: { transform: 'translateX(0)' },
+        to: { transform: 'translateX(-100%)' },
       },
     },
   },

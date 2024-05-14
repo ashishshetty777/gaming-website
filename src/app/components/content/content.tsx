@@ -29,6 +29,88 @@ import Ellipse6 from '../../../../public/assets/Ellipse6.png';
 import Circle from '../../../../public/assets/Circle.png';
 import Faq from '../faqs/faqs';
 const Content = () => {
+  let games = [
+    'Pegaxy',
+    'League of Legends',
+    'Dota 2',
+    'Counter-Strike: Global Offensive',
+    'Fortnite',
+    'Overwatch',
+    'Call of Duty',
+    'Valorant',
+    'Rainbow Six Siege',
+    "PlayerUnknown's Battlegrounds",
+    'Rocket League',
+    'Philand',
+    'Crypto Unicorns',
+    'Blockchain Monster Hunt',
+    'Sunflower Land',
+    'REVV Racing',
+    'Buddy Arena',
+    'Dogami',
+    'League of Kingdoms',
+    'Second World',
+    'GensoKishi Online',
+    'CyBall',
+    'Battle Showdown',
+    'Galaxy Fight Club',
+    'Benji Bananas',
+    'Arc8',
+    'Skyweaver',
+    'REALM',
+    'Voxie Tactics',
+    'Mojo Melee',
+    'Torque Drift 2',
+    'Gas Hero',
+    'Crypto Raiders',
+    'Decentraland',
+    'Arsenal',
+    'Oath of Peak',
+    'Cyber Stadium',
+    'Defy',
+    'DragonMaster',
+    'Forest Knight',
+    'Bullieverse',
+    'STG Football',
+    'Zed Run',
+    'Alpha League Racing',
+    'The Heist',
+    'Mini Royale: Nations',
+    'EV.IO',
+    'Aurory',
+    'DeFi Land',
+    'Star Atlas: SAGE Labs',
+    'Neopolis',
+    'Bladerite',
+    'Everseed',
+    'Pixel Guild',
+    'Genopets',
+    'Mighty Action Heroes',
+    'Goons of Balatroon',
+    'Tales of Elleria',
+    'Zeeverse',
+    'Bridgeworld',
+    'Crabada',
+    'DeFi Kingdoms',
+    'Portal Fantasy',
+    'Petopia',
+    'TaleCraft',
+    'Champions Arena',
+    'Eternal Paradox',
+    'Echoes of Empire',
+    'Dragon Strike',
+    'Spider Tanks',
+    'Meow Match',
+    'Town Star',
+    'My Crypto Heroes',
+    'Loot by Rogue',
+    'Pixels',
+    'Axie Infinity',
+    'Apeiron',
+    'Battle Bears Heroes',
+    'Alien Worlds',
+    'Splinterlands',
+  ];
   return (
     <>
       <div className="bg-black lg:bg-unset md:bg-unset">
@@ -45,23 +127,22 @@ const Content = () => {
             type="video/mp4"
           />
         </video>
-        <section className="absolute left-0 right-0 top-24 md:px-20 lg:px-20 px-10 py-10">
+        <section className="md:absolute lg:absolute relative left-0 right-0 lg:top-24 md:top-24 md:px-20 lg:px-20 px-10 py-10">
           <div className="py-5 md:px-10 lg:px-10 px-1 text-white text-center">
-            <div className="text-5xl font-poppins">
-              {' '}
+            <div className="lg:text-7.5xl md:text-6xl text-4xl lg:leading-78 md:leading-60  tracking-normal font-bold">
               Create <br></br>
               Your <span className="text-main-green">Universal</span>
               <br></br>
               Gaming ID
             </div>
             <div className="pt-6 text-base font-poppinsLight font-poppinsLight font-extralight">
-              It is a long established fact that a reader will be distracted{' '}
+              It is a long established fact that a reader will be distracted
               <br></br> by the readable content of a page.
             </div>
           </div>
           <div className="w-full">
             <Image
-              className="m-auto h-10 w-32"
+              className="m-auto h-12 w-36 cursor-pointer"
               src={GooglePlayBtn}
               alt="Google-play"
             />
@@ -69,9 +150,8 @@ const Content = () => {
         </section>
       </div>
       <section className="md:px-20 lg:px-20 px-10 py-10 bg-white">
-        <div className="pt-10 text-center text-2xl">
+        <div className="pt-10 text-center text-4xl">
           <div className="font-poppins text-black">
-            {' '}
             Get the best of your blockchains
           </div>
           <div className="py-3 text-base font-poppinsLight text-main-gray">
@@ -123,7 +203,7 @@ const Content = () => {
             </div>
           </div>
         </div>
-        <div className="pt-10 text-left lg:text-center md:text-center text-2xl font-poppins text-black">
+        <div className="pt-10 text-left lg:text-center md:text-center text-4xl font-poppins text-black">
           There are many variations of <br></br> passages of Lorem Ipsum
         </div>
         <div className="block lg:hidden md:hidden relative">
@@ -252,74 +332,29 @@ const Content = () => {
         </div>
       </section>
       <section className="bg-dark-blue md:px-20 lg:px-20 px-10 py-10  md:h-500 lg:h-500">
-        <div className="pt-10 text-center text-white text-2xl">
+        <div className="pt-10 text-center text-white text-4xl">
           <div className="font-poppins"> Supported Web3-Games</div>
         </div>
-        <div className=" w-full pt-5 overflow-auto">
-          <div className="flex m-auto justify-center">
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Sorare
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Planet IX
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                The Sandbox
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Axie Infinity
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Illuvium
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Decentraland
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Aurory
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                DeFi Land
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Funfair
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                CryptoKitties
-              </div>
-            </div>
+        <div className=" w-full pt-5 slider overflow-hidden">
+          <div className="flex m-auto slider-track justify-center">
+            {games.map((game, i) => {
+              return (
+                <div key={i} className="slide">
+                  <div
+                    className={`flex rounded-full mr-3 w-40  text-center py-1 px-2 justify-center text-white`}
+                  >
+                    <div className="ml-1 text-base font-poppinsLight font-extralight">
+                      {game}
+                    </div>
+                  </div>
+                  <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className="flex border-t border-slate-700 mt-8 pt-10  text-white">
-          <div className="basis-1/2 text-2xl">
+          <div className="basis-1/2 text-4xl">
             Lorem Ipsum is simply <br></br> dummy text of the
           </div>
           <div className="basis-1/2 text-base font-poppinsLight font-extralight mt-4 h-8 border-l-2 pl-4 border-main-green">
@@ -364,7 +399,7 @@ const Content = () => {
         </div>
       </section>
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
-        <div className="pt-10 mt-0 md:mt-60 lg:mt-60 text-center text-2xl">
+        <div className="pt-10 mt-0 md:mt-60 lg:mt-60 text-center text-4xl">
           <div className="font-poppins text-black"> Roadmap</div>
           <div className="flex grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 mt-10 justify-center">
             <div className="basis-1/2">
@@ -454,7 +489,7 @@ const Content = () => {
         </div>
       </section>
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
-        <div className="pt-10 text-center text-2xl">
+        <div className="pt-10 text-center text-4xl">
           <div className="font-poppins text-black"> Meet the team</div>
           <div className="pt-6 text-base font-poppinsLight text-black font-extralight">
             It is a long established fact that a reader will be distracted{' '}
@@ -465,7 +500,7 @@ const Content = () => {
           <div className="w-fit mx-auto">
             <Image className="w-60 h-56" src={Team1} alt="team-1" />
             <div className="w-60 h-56 bg-dark-blue p-4">
-              <div className="text-2xl font-bold text-white">Anish Kapoor</div>
+              <div className="text-4xl font-bold text-white">Anish Kapoor</div>
               <div className="text-md my-2 font-light text-white">
                 Chief Executive Officer
               </div>
@@ -482,7 +517,7 @@ const Content = () => {
           <div className="w-fit mt-10 md:mt-0 lg:mt-0 mx-auto">
             <Image className="w-60 h-56" src={Team2} alt="team-1" />
             <div className="w-60 h-56 bg-dark-blue p-4">
-              <div className="text-2xl font-bold text-white">Ved Prakash</div>
+              <div className="text-4xl font-bold text-white">Ved Prakash</div>
               <div className="text-md my-2 font-light text-white">
                 Chief Technology Officer
               </div>
@@ -499,7 +534,7 @@ const Content = () => {
           <div className="w-fit mt-10 md:mt-10 lg:mt-0 mx-auto">
             <Image className="w-60 h-56" src={Team3} alt="team-1" />
             <div className="w-60 h-56 bg-dark-blue p-4">
-              <div className="text-2xl font-bold text-white">
+              <div className="text-4xl font-bold text-white">
                 Gagandeep Singh
               </div>
               <div className="text-md my-2 font-light text-white">
@@ -518,7 +553,7 @@ const Content = () => {
           <div className="w-fit mt-10 md:mt-10 lg:mt-0 mx-auto">
             <Image className="w-60 h-56" src={Team4} alt="team-1" />
             <div className="w-60 h-56 bg-dark-blue p-4">
-              <div className="text-2xl font-bold text-white">
+              <div className="text-4xl font-bold text-white">
                 Vishvanath Reddy
               </div>
               <div className="text-md my-2 font-light text-white">
@@ -632,7 +667,7 @@ const Content = () => {
               </form>
             </div>
             <div className="mt-10 md:mt-10 lg:mt-0 ml-0 lg:ml-10 md:ml-0">
-              <div className="text-2xl text-black font-medium">Need help?</div>
+              <div className="text-4xl text-black font-medium">Need help?</div>
               <div className="text-base font-poppinsLight font-medium mt-5  text-main-gray">
                 If you are already a Enoobs member and you are having a
                 <br className="hidden md:block lg:block"></br>
