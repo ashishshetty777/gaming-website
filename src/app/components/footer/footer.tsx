@@ -176,7 +176,7 @@ const Footer = () => {
       </div>
       <div className="w-full relative">
         <div className="float-left text-base font-extralight w-full text-white lg:w-max md:w-max text-center lg:text-right md:text-right">
-          © 2024 Enoobs
+          © 2024 Enoobsss
         </div>
         <div className="float-right absolute right-5 -bottom-5 flex">
           <Image
