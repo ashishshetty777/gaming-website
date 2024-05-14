@@ -13,6 +13,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      bottom: {
+        minus: '-20px',
+      },
       colors: {
         'main-green': '#06A38B',
         trans: 'rgba(0, 0, 0, 0.25)',
@@ -43,6 +46,7 @@ const config: Config = {
       },
       fontFamily: {
         poppins: ['var(--poppins)'],
+        poppinsLight: ['var(--poppinsLight)'],
         inter: ['var(--inter)'],
       },
     },

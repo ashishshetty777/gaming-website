@@ -10,6 +10,13 @@ const poppins = Poppins({
   subsets: ['latin'],
 });
 
+const poppinsLight = Poppins({
+  style: 'normal',
+  weight: '400',
+  variable: '--poppinsLight',
+  subsets: ['latin'],
+});
+
 export const metadata: Metadata = {
   title: 'Enoobs',
   description: '',
@@ -22,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${poppins.variable}`}>
+      <body
+        className={`${inter.className} ${poppins.variable} ${poppinsLight.variable}`}
+      >
         {children}
       </body>
     </html>

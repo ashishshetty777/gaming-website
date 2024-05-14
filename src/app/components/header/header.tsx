@@ -6,9 +6,9 @@ import Logo from '../../../../public/assets/Header_logo.png';
 const Header = () => {
   const [showSidePanel, setShowSidePanel] = useState(false);
   return (
-    <header className="md:px-20 lg:px-20 px-10 py-5 flex bg-black lg:bg-unset md:bg-unset lg:bg-none md:bg-none justify-between font-inter">
+    <header className="absolute top-0 w-full md:px-20 lg:px-20 px-10 py-5 flex bg-black lg:bg-unset md:bg-unset lg:bg-none md:bg-none justify-between font-inter">
       <nav
-        className=" flex w-full items-center justify-between  py-1"
+        className=" flex w-full items-center justify-between   py-1"
         aria-label="Global"
       >
         <div className="">

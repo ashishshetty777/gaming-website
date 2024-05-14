@@ -33,16 +33,19 @@ const Content = () => {
     <>
       <div className="bg-black lg:bg-unset md:bg-unset">
         <video
-          className="bg-vid hidden lg:block md:block w-full object-center absolute left-0 right-0 top-0 z-minus"
+          className="bg-vid hidden lg:block md:block w-full object-center z-minus"
           poster={'assets/Hero.png'}
           autoPlay
           loop
           muted
           // controls
         >
-          <source src={'/assets/main-bg.mp4'} type="video/mp4" />
+          <source
+            src={'/assets/Enoobs_web_bg_vedio_conpressed.mp4'}
+            type="video/mp4"
+          />
         </video>
-        <section className="md:px-20 lg:px-20 px-10 py-10">
+        <section className="absolute left-0 right-0 top-24 md:px-20 lg:px-20 px-10 py-10">
           <div className="py-5 md:px-10 lg:px-10 px-1 text-white text-center">
             <div className="text-5xl font-poppins">
               {' '}
@@ -51,7 +54,7 @@ const Content = () => {
               <br></br>
               Gaming ID
             </div>
-            <div className="pt-6 text-xs font-extralight">
+            <div className="pt-6 text-base font-poppinsLight font-poppinsLight font-extralight">
               It is a long established fact that a reader will be distracted{' '}
               <br></br> by the readable content of a page.
             </div>
@@ -71,46 +74,50 @@ const Content = () => {
             {' '}
             Get the best of your blockchains
           </div>
-          <div className="pt-1 text-xs text-main-gray">
+          <div className="py-3 text-base font-poppinsLight text-main-gray">
             It is a long established fact that a reader will <br></br> be
             distracted by the readable content of a page.
           </div>
         </div>
         <div className="w-full pt-5 px-0 lg:px-32 md:px-10">
           <div className="flex  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 m-auto justify-center justify-items-center">
-            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image alt="Ethereum" className="h-4 w-4" src={Ethereum} />
-              <div className="ml-1 text-xs font-semibold text-black">
+            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+              <Image alt="Ethereum" className="mt-1 h-4 w-4" src={Ethereum} />
+              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
                 Ethereum
               </div>
             </div>
-            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image alt="Polygon" className="h-4 w-4" src={Polygon} />
-              <div className="ml-1 text-xs font-semibold text-black">
+            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+              <Image alt="Polygon" className="mt-1 h-4 w-4" src={Polygon} />
+              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
                 Polygon
               </div>
             </div>
-            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image alt="Avalanche" className="h-4 w-4" src={Avalanche} />
-              <div className="ml-1 text-xs font-semibold text-black">
+            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+              <Image
+                alt="Avalanche"
+                className="mt-1  h-4 w-4"
+                src={Avalanche}
+              />
+              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
                 Avalanche
               </div>
             </div>
-            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image alt="Ripple" className="h-4 w-4" src={Ripple} />
-              <div className="ml-1 text-xs font-semibold text-black">
+            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+              <Image alt="Ripple" className="mt-1  h-4 w-4" src={Ripple} />
+              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
                 Ripple
               </div>
             </div>
-            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image alt="Stellar" className="h-4 w-4" src={Stellar} />
-              <div className="ml-1 text-xs font-semibold text-black">
+            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+              <Image alt="Stellar" className="mt-1  h-4 w-4" src={Stellar} />
+              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
                 Stellar
               </div>
             </div>
-            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image alt="Solana" className="h-4 w-4" src={Solana} />
-              <div className="ml-1 text-xs font-semibold text-black">
+            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+              <Image alt="Solana" className="mt-1  h-4 w-4" src={Solana} />
+              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
                 Solana
               </div>
             </div>
@@ -125,7 +132,7 @@ const Content = () => {
               <div className="text-xl text-black font-bold">
                 Unique Gaming ID
               </div>
-              <div className="text-xs text-black">
+              <div className="text-base font-poppinsLight text-black">
                 It is a long established fact that a reader will <br></br> be
                 distracted by the readable.
               </div>
@@ -134,7 +141,7 @@ const Content = () => {
               <div className="text-xl font-bold text-black">
                 Unique Gaming ID
               </div>
-              <div className="text-xs text-black">
+              <div className="text-base font-poppinsLight text-black">
                 It is a long established fact that a reader will <br></br> be
                 distracted by the readable.
               </div>
@@ -143,7 +150,7 @@ const Content = () => {
               <div className="text-xl font-bold text-black">
                 Unique Gaming ID
               </div>
-              <div className="text-xs text-black">
+              <div className="text-base font-poppinsLight text-black">
                 It is a long established fact that a reader will <br></br> be
                 distracted by the readable.
               </div>
@@ -152,7 +159,7 @@ const Content = () => {
               <div className="text-xl font-bold text-black">
                 Unique Gaming ID
               </div>
-              <div className="text-xs text-black">
+              <div className="text-base font-poppinsLight text-black">
                 It is a long established fact that a reader will <br></br> be
                 distracted by the readable.
               </div>
@@ -179,7 +186,7 @@ const Content = () => {
                   />
                   Unique Gaming ID
                 </div>
-                <div className="text-xs text-black">
+                <div className="text-base font-poppinsLight text-black">
                   It is a long established fact that a reader will <br></br> be
                   distracted by the readable.
                 </div>
@@ -195,7 +202,7 @@ const Content = () => {
                 <div className="text-xl font-bold text-black">
                   Unique Gaming ID
                 </div>
-                <div className="text-xs text-black">
+                <div className="text-base font-poppinsLight text-black">
                   It is a long established fact that a reader will <br></br> be
                   distracted by the readable.
                 </div>
@@ -221,7 +228,7 @@ const Content = () => {
                   />
                   Unique Gaming ID
                 </div>
-                <div className="text-xs">
+                <div className="text-base font-poppinsLight">
                   It is a long established fact that a reader will <br></br> be
                   distracted by the readable.
                 </div>
@@ -235,7 +242,7 @@ const Content = () => {
                 />
 
                 <div className="text-xl font-bold">Unique Gaming ID</div>
-                <div className="text-xs">
+                <div className="text-base font-poppinsLight">
                   It is a long established fact that a reader will <br></br> be
                   distracted by the readable.
                 </div>
@@ -251,43 +258,63 @@ const Content = () => {
         <div className=" w-full pt-5 overflow-auto">
           <div className="flex m-auto justify-center">
             <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-xs font-extralight">Sorare</div>
+              <div className="ml-1 text-base font-poppinsLight font-extralight">
+                Sorare
+              </div>
             </div>
             <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
             <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-xs font-extralight">Planet IX</div>
+              <div className="ml-1 text-base font-poppinsLight font-extralight">
+                Planet IX
+              </div>
             </div>
             <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
             <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-xs font-extralight">The Sandbox</div>
+              <div className="ml-1 text-base font-poppinsLight font-extralight">
+                The Sandbox
+              </div>
             </div>
             <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
             <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-xs font-extralight">Axie Infinity</div>
+              <div className="ml-1 text-base font-poppinsLight font-extralight">
+                Axie Infinity
+              </div>
             </div>
             <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
             <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-xs font-extralight">Illuvium</div>
+              <div className="ml-1 text-base font-poppinsLight font-extralight">
+                Illuvium
+              </div>
             </div>
             <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
             <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-xs font-extralight">Decentraland</div>
+              <div className="ml-1 text-base font-poppinsLight font-extralight">
+                Decentraland
+              </div>
             </div>
             <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
             <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-xs font-extralight">Aurory</div>
+              <div className="ml-1 text-base font-poppinsLight font-extralight">
+                Aurory
+              </div>
             </div>
             <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
             <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-xs font-extralight">DeFi Land</div>
+              <div className="ml-1 text-base font-poppinsLight font-extralight">
+                DeFi Land
+              </div>
             </div>
             <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
             <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-xs font-extralight">Funfair</div>
+              <div className="ml-1 text-base font-poppinsLight font-extralight">
+                Funfair
+              </div>
             </div>
             <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
             <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-xs font-extralight">CryptoKitties</div>
+              <div className="ml-1 text-base font-poppinsLight font-extralight">
+                CryptoKitties
+              </div>
             </div>
           </div>
         </div>
@@ -295,7 +322,7 @@ const Content = () => {
           <div className="basis-1/2 text-2xl">
             Lorem Ipsum is simply <br></br> dummy text of the
           </div>
-          <div className="basis-1/2 text-xs font-extralight mt-4 h-8 border-l-2 pl-4 border-main-green">
+          <div className="basis-1/2 text-base font-poppinsLight font-extralight mt-4 h-8 border-l-2 pl-4 border-main-green">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
           </div>
@@ -303,7 +330,7 @@ const Content = () => {
         <div className="flex grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 mt-10 justify-center">
           <div className="p-4 bg-white mt-2 md:mt-0 lg:mt-0 rounded-md text-center mr-0 md:mr-4 lg:mr-4 shadow-card">
             <div className="text-xl font-bold text-black">Feature 1</div>
-            <div className="text-xs text-black">
+            <div className="text-base font-poppinsLight text-black">
               It is a long established fact that a reader will <br></br> be
               distracted by the readable.
             </div>
@@ -312,7 +339,7 @@ const Content = () => {
           <div className="p-4 bg-white mt-2 md:mt-0 lg:mt-0 rounded-md text-center mr-0 md:mr-4 lg:mr-4 shadow-card">
             <div className="block md:hidden lg:hidden">
               <div className="text-xl font-bold text-black">Feature 2</div>
-              <div className="text-xs mb-5 text-black">
+              <div className="text-base font-poppinsLight mb-5 text-black">
                 It is a long established fact that a reader will <br></br> be
                 distracted by the readable.
               </div>
@@ -320,7 +347,7 @@ const Content = () => {
             <Image className="w-28 h-60 m-auto " src={Mobile} alt="phone" />
             <div className="hidden md:block lg:block">
               <div className="text-xl font-bold text-black mt-5">Feature 2</div>
-              <div className="text-xs text-black">
+              <div className="text-base font-poppinsLight text-black">
                 It is a long established fact that a reader will <br></br> be
                 distracted by the readable.
               </div>
@@ -328,7 +355,7 @@ const Content = () => {
           </div>
           <div className="p-4 bg-white mt-2 md:mt-0 lg:mt-0 rounded-md text-center mr-0 md:mr-4 lg:mr-4 shadow-card">
             <div className="text-xl font-bold text-black">Feature 3</div>
-            <div className="text-xs text-black">
+            <div className="text-base font-poppinsLight text-black">
               It is a long established fact that a reader will <br></br> be
               distracted by the readable.
             </div>
@@ -345,7 +372,7 @@ const Content = () => {
                 <Image className="h-12 w-10" src={FirstFlag} alt="first" />
                 <div className="w-full hidden md:block lg:block h-px border-t-2 border-main-green mt-8 "></div>
               </div>
-              <div className="text-xs text-left mr-4">
+              <div className="text-base font-poppinsLight text-left mr-4">
                 <div className="font-bold bg-text-bg text-black mt-2 w-fit p-1">
                   2023
                 </div>
@@ -366,7 +393,7 @@ const Content = () => {
                 <Image className="h-12 w-10" src={SecondFlag} alt="first" />
                 <div className="w-full hidden md:block lg:block h-px border-t-2 border-dashed border-main-green mt-8 "></div>
               </div>
-              <div className="text-xs text-left mr-4">
+              <div className="text-base font-poppinsLight text-left mr-4">
                 <div className="font-bold bg-text-bg text-black mt-2 w-fit p-1">
                   2024
                 </div>
@@ -387,7 +414,7 @@ const Content = () => {
                 <Image className="h-12 w-10" src={ThirdFlag} alt="first" />
                 <div className="w-full hidden md:block lg:block h-px border-t-2 border-dashed border-slate-200 mt-8 "></div>
               </div>
-              <div className="text-xs text-left mr-4">
+              <div className="text-base font-poppinsLight text-left mr-4">
                 <div className="font-bold bg-text-bg text-black mt-2 w-fit p-1">
                   2025
                 </div>
@@ -407,7 +434,7 @@ const Content = () => {
               <div className="flex">
                 <Image className="h-12 w-10" src={FourthFlag} alt="first" />
               </div>
-              <div className="text-xs text-left mr-4">
+              <div className="text-base font-poppinsLight text-left mr-4">
                 <div className="font-bold bg-text-bg text-black mt-2 w-fit p-1">
                   2026
                 </div>
@@ -429,7 +456,7 @@ const Content = () => {
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
         <div className="pt-10 text-center text-2xl">
           <div className="font-poppins text-black"> Meet the team</div>
-          <div className="pt-6 text-xs text-black font-extralight">
+          <div className="pt-6 text-base font-poppinsLight text-black font-extralight">
             It is a long established fact that a reader will be distracted{' '}
             <br></br> by the readable content of a page.
           </div>
@@ -528,7 +555,7 @@ const Content = () => {
             <span className="text-black"> Say </span>
             <span className="text-main-green"> hello. </span>
           </div>
-          <div className="ml-4 mt-6 md:mt-1 lg:mt-1 text-xs font-medium text-main-gray">
+          <div className="ml-4 mt-6 md:mt-1 lg:mt-1 text-base font-poppinsLight font-medium text-main-gray">
             Feel free to drop us an email anytime.<br></br> We’d love to hear
             from you.
           </div>
@@ -599,21 +626,21 @@ const Content = () => {
                     placeholder="Message"
                   />
                 </div>
-                <button className="mt-4 text-white cursor-pointer text-xs py-2 px-4 rounded-full bg-black">
+                <button className="mt-4 text-white cursor-pointer text-base font-poppinsLight py-2 px-4 rounded-full bg-black">
                   Send Message
                 </button>
               </form>
             </div>
             <div className="mt-10 md:mt-10 lg:mt-0 ml-0 lg:ml-10 md:ml-0">
               <div className="text-2xl text-black font-medium">Need help?</div>
-              <div className="text-xs font-medium mt-5  text-main-gray">
+              <div className="text-base font-poppinsLight font-medium mt-5  text-main-gray">
                 If you are already a Enoobs member and you are having a
                 <br className="hidden md:block lg:block"></br>
                 {` Enoobs related question or problem, please contact to our`}
                 <br className="hidden md:block lg:block"></br>
                 support team and they will get back to you shortly.
               </div>
-              <button className="mt-4 text-white cursor-pointer text-xs py-2 px-4 rounded-full bg-black">
+              <button className="mt-4 text-white cursor-pointer text-base font-poppinsLight py-2 px-4 rounded-full bg-black">
                 Contact Support
               </button>
             </div>
