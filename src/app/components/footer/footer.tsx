@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="min-h-full px-7 pt-7 pb-11 lg:pb-7 md:pb-7 bg-dark-blue z-50 relative">
+    <div className=" px-7 pt-20 pb-20 lg:pb-7 md:pb-7 bg-dark-blue z-50 relative">
       <div className="block lg:hidden md:hidden">
         <Link href="/" className="-m-1.5 p-1.5">
           <Image
@@ -17,9 +17,9 @@ const Footer = () => {
             alt=""
           ></Image>
         </Link>
-        <div className="mt-6 lg:text-left md:text-left text-md font-extralight text-white text-center">
+        <div className=" lg:text-left md:text-left text-md font-extralight text-white text-center">
           <Image
-            className="sm:basis-full h-22 w-44 m-auto md:float-left lg:float-left"
+            className="sm:basis-full h-22 w-44 m-auto md:float-left mt-5 lg:float-left"
             src={GooglePlayBtn}
             alt=""
           ></Image>
@@ -34,9 +34,9 @@ const Footer = () => {
               alt=""
             ></Image>
           </Link>
-          <div className="mt-6 lg:text-left md:text-left text-md font-extralight text-white text-center">
+          <div className="lg:text-left md:text-left text-md font-extralight text-white text-center">
             <Image
-              className="sm:basis-full h-22 w-44 m-auto md:float-left lg:float-left"
+              className="sm:basis-full h-22 w-44 m-auto md:float-left mt-10 lg:float-left"
               src={GooglePlayBtn}
               alt=""
             ></Image>
@@ -174,26 +174,40 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="w-full relative">
+      <div className="w-full bg-dark-blue relative">
         <div className="float-left text-base font-extralight w-full text-white lg:w-max md:w-max text-center lg:text-right md:text-right">
           © 2024 Enoobs
         </div>
-        <div className="float-right absolute right-5 -bottom-5 flex">
-          <Image
-            className="cursor-pointer w-8 h-8 mr-2"
-            src={Youtube}
-            alt="Youtube"
-          ></Image>
-          <Image
-            className="cursor-pointer w-8 h-8 mr-2"
-            src={Linkedin}
-            alt="linkedin"
-          ></Image>
-          <Image
-            className="cursor-pointer w-8 h-8 mr-2"
-            src={X}
-            alt="X"
-          ></Image>
+        <div className="w-full">
+          <div className="justify-center w-full pt-4 md:justify-end lg:justify-end lg:absolute md:absolute right-5 -bottom-5 flex">
+            <Link href="https://www.youtube.com/@Enoobs-tech" target="_blank">
+              <Image
+                className="cursor-pointer w-8 h-8 mr-2"
+                src={Youtube}
+                alt="Youtube"
+              ></Image>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/enoobs/"
+              target="_blank"
+            >
+              <Image
+                className="cursor-pointer w-8 h-8 mr-2"
+                src={Linkedin}
+                alt="linkedin"
+              ></Image>
+            </Link>
+            <Link
+              href="https://twitter.com/i/flow/login?redirect_after_login=%2FEnoobs_India"
+              target="_blank"
+            >
+              <Image
+                className="cursor-pointer w-8 h-8 mr-2"
+                src={X}
+                alt="X"
+              ></Image>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

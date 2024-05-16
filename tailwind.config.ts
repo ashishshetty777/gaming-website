@@ -8,11 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        midsection: '40% 20% 40%',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontSize: {
+        '7.5xl': '88px',
+      },
+      lineHeight: {
+        78: '78px',
+        60: '60px',
+      },
+      letterSpacing: {},
       bottom: {
         minus: '-20px',
       },
@@ -40,14 +51,23 @@ const config: Config = {
       height: {
         500: '500px',
         816: '816px',
+        450: '450px',
+        230: '230px',
       },
       width: {
         '35rem': '35rem',
+        257: '257px',
       },
       fontFamily: {
         poppins: ['var(--poppins)'],
         poppinsLight: ['var(--poppinsLight)'],
         inter: ['var(--inter)'],
+      },
+    },
+    keyframes: {
+      'infinite-scroll': {
+        from: { transform: 'translateX(0)' },
+        to: { transform: 'translateX(-100%)' },
       },
     },
   },

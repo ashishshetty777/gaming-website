@@ -1,5 +1,5 @@
 'use client';
-
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import GooglePlayBtn from '../../../../public/assets/get_it_on.png';
 import Ethereum from '../../../../public/assets/Ethereum.png';
@@ -29,6 +29,88 @@ import Ellipse6 from '../../../../public/assets/Ellipse6.png';
 import Circle from '../../../../public/assets/Circle.png';
 import Faq from '../faqs/faqs';
 const Content = () => {
+  let games = [
+    'Pegaxy',
+    'League of Legends',
+    'Dota 2',
+    'Counter-Strike: Global Offensive',
+    'Fortnite',
+    'Overwatch',
+    'Call of Duty',
+    'Valorant',
+    'Rainbow Six Siege',
+    "PlayerUnknown's Battlegrounds",
+    'Rocket League',
+    'Philand',
+    'Crypto Unicorns',
+    'Blockchain Monster Hunt',
+    'Sunflower Land',
+    'REVV Racing',
+    'Buddy Arena',
+    'Dogami',
+    'League of Kingdoms',
+    'Second World',
+    'GensoKishi Online',
+    'CyBall',
+    'Battle Showdown',
+    'Galaxy Fight Club',
+    'Benji Bananas',
+    'Arc8',
+    'Skyweaver',
+    'REALM',
+    'Voxie Tactics',
+    'Mojo Melee',
+    'Torque Drift 2',
+    'Gas Hero',
+    'Crypto Raiders',
+    'Decentraland',
+    'Arsenal',
+    'Oath of Peak',
+    'Cyber Stadium',
+    'Defy',
+    'DragonMaster',
+    'Forest Knight',
+    'Bullieverse',
+    'STG Football',
+    'Zed Run',
+    'Alpha League Racing',
+    'The Heist',
+    'Mini Royale: Nations',
+    'EV.IO',
+    'Aurory',
+    'DeFi Land',
+    'Star Atlas: SAGE Labs',
+    'Neopolis',
+    'Bladerite',
+    'Everseed',
+    'Pixel Guild',
+    'Genopets',
+    'Mighty Action Heroes',
+    'Goons of Balatroon',
+    'Tales of Elleria',
+    'Zeeverse',
+    'Bridgeworld',
+    'Crabada',
+    'DeFi Kingdoms',
+    'Portal Fantasy',
+    'Petopia',
+    'TaleCraft',
+    'Champions Arena',
+    'Eternal Paradox',
+    'Echoes of Empire',
+    'Dragon Strike',
+    'Spider Tanks',
+    'Meow Match',
+    'Town Star',
+    'My Crypto Heroes',
+    'Loot by Rogue',
+    'Pixels',
+    'Axie Infinity',
+    'Apeiron',
+    'Battle Bears Heroes',
+    'Alien Worlds',
+    'Splinterlands',
+  ];
   return (
     <>
       <div className="bg-black lg:bg-unset md:bg-unset">
@@ -45,33 +127,65 @@ const Content = () => {
             type="video/mp4"
           />
         </video>
-        <section className="absolute left-0 right-0 top-24 md:px-20 lg:px-20 px-10 py-10">
+        <section className="md:absolute lg:absolute relative left-0 right-0 lg:top-24 md:top-24 md:px-20 lg:px-20 px-10 py-10">
           <div className="py-5 md:px-10 lg:px-10 px-1 text-white text-center">
-            <div className="text-5xl font-poppins">
-              {' '}
+            <div className="lg:text-7.5xl md:text-6xl text-4xl lg:leading-78 md:leading-60  tracking-normal font-bold">
               Create <br></br>
               Your <span className="text-main-green">Universal</span>
               <br></br>
               Gaming ID
             </div>
-            <div className="pt-6 text-base font-poppinsLight font-poppinsLight font-extralight">
-              It is a long established fact that a reader will be distracted{' '}
-              <br></br> by the readable content of a page.
+          </div>
+          <div className="pt-6 font-poppinsLight relative font-extralight">
+            <div className="testimonial-slider">
+              <ul className="slider">
+                <li>
+                  <div className="testimonial-slider-content">
+                    <p className=" font-poppinsLight text-lg text-center">
+                      You deserve recognition and rewards for the time,
+                      attention, <br></br>and accomplishments you put into
+                      gaming across a variety of games.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <p className=" font-poppinsLight text-lg text-center">
+                    We believe that your gaming history and achievements
+                    <br></br> are incredibly valuable
+                  </p>
+                </li>
+                <li>
+                  <div className="testimonial-slider-content">
+                    <p className="font-poppinsLight text-lg text-center">
+                      Single profile that brings together every aspect of your
+                      gaming life,<br></br> and truly recognizes who you are as
+                      a gamer
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div className="testimonial-slider-content">
+                    <p className=" font-poppinsLight text-lg text-center">
+                      We believe that your gaming history and achievements
+                      <br></br> are incredibly valuable
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="w-full">
             <Image
-              className="m-auto h-10 w-32"
+              className="m-auto h-12 w-36 cursor-pointer"
               src={GooglePlayBtn}
               alt="Google-play"
             />
           </div>
         </section>
       </div>
-      <section className="md:px-20 lg:px-20 px-10 py-10 bg-white">
-        <div className="pt-10 text-center text-2xl">
+      <section className="md:px-20 lg:px-0 px-10 py-10 bg-white">
+        <div className="pt-10 text-center text-4xl">
           <div className="font-poppins text-black">
-            {' '}
             Get the best of your blockchains
           </div>
           <div className="py-3 text-base font-poppinsLight text-main-gray">
@@ -80,246 +194,269 @@ const Content = () => {
           </div>
         </div>
         <div className="w-full pt-5 px-0 lg:px-32 md:px-10">
-          <div className="flex  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 m-auto justify-center justify-items-center">
-            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 m-auto justify-center justify-items-center">
+            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
               <Image alt="Ethereum" className="mt-1 h-4 w-4" src={Ethereum} />
-              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
+              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
                 Ethereum
               </div>
             </div>
-            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
               <Image alt="Polygon" className="mt-1 h-4 w-4" src={Polygon} />
-              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
+              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
                 Polygon
               </div>
             </div>
-            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
               <Image
                 alt="Avalanche"
                 className="mt-1  h-4 w-4"
                 src={Avalanche}
               />
-              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
+              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
                 Avalanche
               </div>
             </div>
-            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
               <Image alt="Ripple" className="mt-1  h-4 w-4" src={Ripple} />
-              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
+              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
                 Ripple
               </div>
             </div>
-            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
               <Image alt="Stellar" className="mt-1  h-4 w-4" src={Stellar} />
-              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
+              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
                 Stellar
               </div>
             </div>
-            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-32 text-center py-1 px-2 justify-center bg-pill-bg-green border border-pill-border">
+            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
               <Image alt="Solana" className="mt-1  h-4 w-4" src={Solana} />
-              <div className="ml-1 text-base font-poppinsLight font-semibold text-black">
+              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
                 Solana
               </div>
             </div>
           </div>
         </div>
-        <div className="pt-10 text-left lg:text-center md:text-center text-2xl font-poppins text-black">
-          There are many variations of <br></br> passages of Lorem Ipsum
+        <div className="pt-10 text-left lg:text-center md:text-center text-4xl font-poppins text-black">
+          Why Enoobs?
         </div>
         <div className="block lg:hidden md:hidden relative">
           <div className="ml-0 mr-0 flex flex-col">
             <div className="mt-5">
               <div className="text-xl text-black font-bold">
-                Unique Gaming ID
+                Universal Gaming ID
               </div>
               <div className="text-base font-poppinsLight text-black">
-                It is a long established fact that a reader will <br></br> be
-                distracted by the readable.
+                Enoobs offers a blockchain-based decentralized identifier (DID)
+                for gamers, secured through a straightforward KYC verification
+                process. This universal gaming ID provides a global identity to
+                gamers & streamlines processes like age verification for games
+                with restrictions without the need for gamers to resubmit their
+                documents across various platforms.
               </div>
             </div>
             <div className="mt-5">
               <div className="text-xl font-bold text-black">
-                Unique Gaming ID
+                Creator Economy
               </div>
               <div className="text-base font-poppinsLight text-black">
-                It is a long established fact that a reader will <br></br> be
-                distracted by the readable.
+                Enoobs prioritizes empowering gamers as creators, providing
+                avenues for monetization through subscriptions, tipping, ad
+                revenue sharing, and sponsored content. By enabling creators to
+                earn from their content. This approach not only benefits
+                individual creators but also enriches the overall gaming
+                community by incentivizing innovation and quality content
+                creation.
               </div>
             </div>
             <div className="mt-5">
               <div className="text-xl font-bold text-black">
-                Unique Gaming ID
+                Social Features:
               </div>
               <div className="text-base font-poppinsLight text-black">
-                It is a long established fact that a reader will <br></br> be
-                distracted by the readable.
+                Enoobs integrates community, messaging, streaming, sharing, and
+                tagging features tailored specifically to the preferences and
+                needs of the gaming community. These functionalities cater to
+                the unique requirements of gamers, fostering a cohesive
+                environment where they can connect, communicate, share content,
+                and engage with one another seamlessly.
               </div>
             </div>
             <div className="mt-5">
               <div className="text-xl font-bold text-black">
-                Unique Gaming ID
+                Gamers Community
               </div>
               <div className="text-base font-poppinsLight text-black">
-                It is a long established fact that a reader will <br></br> be
-                distracted by the readable.
+                Enoobs is dedicated to gamers, offering a space for seamless
+                connection, collaboration, and community building. Through
+                forums, chat rooms, groups, and events, we foster vibrant
+                interactions and meaningful connections based on shared
+                interests and experiences, enhancing the gaming journey for all
               </div>
             </div>
           </div>
         </div>
         <div className="mt-10 hidden lg:block md:block relative">
           {/* <Image className="w-3/5 h-3/5 m-auto" src={Circle} alt="circle-bg" /> */}
-          <div className="ml-0 mr-0 flex grid grid-cols-3">
-            <div className="relative md:px-1 lg:px-20">
-              <div className="pt-10 relative">
-                <Image
-                  className="w-20 absolute h-20 m-auto"
-                  src={Ellipse1}
-                  alt="Ellipse1"
-                  style={{ top: '-50px' }}
-                />
-                <div className="text-xl font-bold text-black">
-                  <Image
-                    className="w-20 absolute h-20 m-auto"
-                    src={Ellipse3}
-                    alt="Ellipse3"
-                    style={{ top: '100px', left: '-90px' }}
-                  />
-                  Unique Gaming ID
+          <div className="ml-0 mr-0 gap-0 grid grid-cols-midsection">
+            <div className="relative md:px-1 lg:px-8">
+              <div className="flex flex-col">
+                <div className="relative">
+                  <div className="flex flex-col">
+                    <Image
+                      className="w-28 h-28 m-auto"
+                      src={Ellipse3}
+                      alt="Ellipse3"
+                    />
+                    <div>
+                      <div className="flex">
+                        <Image
+                          className="w-20 h-20 m-auto"
+                          src={Ellipse1}
+                          alt="Ellipse1"
+                        />
+                        <div>
+                          <div className="text-xl text-left font-bold text-black">
+                            Universal Gaming ID
+                          </div>
+                          <div className="text-base mt-2 font-poppinsLight text-black">
+                            Enoobs offers a blockchain-based decentralized
+                            identifier (DID) for gamers, secured through a
+                            straightforward KYC verification process. This
+                            universal gaming ID provides a global identity to
+                            gamers & streamlines processes like age verification
+                            for games with restrictions without the need for
+                            gamers to resubmit their documents across various
+                            platforms.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-base font-poppinsLight text-black">
-                  It is a long established fact that a reader will <br></br> be
-                  distracted by the readable.
-                </div>
-              </div>
-              <div className="pt-20 relative">
-                <Image
-                  className="w-20 absolute h-20 m-auto"
-                  src={Ellipse2}
-                  alt="Ellipse2"
-                  style={{ top: '170px' }}
-                />
-
-                <div className="text-xl font-bold text-black">
-                  Unique Gaming ID
-                </div>
-                <div className="text-base font-poppinsLight text-black">
-                  It is a long established fact that a reader will <br></br> be
-                  distracted by the readable.
+                <div>
+                  <div className="pt-10 flex flex-col relative">
+                    <div className="pl-20">
+                      <div className="text-xl font-bold text-black">
+                        Creator Economy
+                      </div>
+                      <div className="text-base mt-2 font-poppinsLight text-black">
+                        Enoobs prioritizes empowering gamers as creators,
+                        providing avenues for monetization through
+                        subscriptions, tipping, ad revenue sharing, and
+                        sponsored content. By enabling creators to earn from
+                        their content. This approach not only benefits
+                        individual creators but also enriches the overall gaming
+                        community by incentivizing innovation and quality
+                        content creation.
+                      </div>
+                    </div>
+                    <div className="w-full">
+                      <Image
+                        className="w-30 h-30 ml-20"
+                        src={Ellipse2}
+                        alt="Ellipse2"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div>
-              <Image className="h-96 w-48 m-auto" src={Mobile} alt="mobile" />
+              <Image
+                className="h-400 w-64 m-auto mt-20"
+                src={Mobile}
+                alt="mobile"
+              />
             </div>
-            <div className="relative md:px-5 lg:px-20">
-              <div className="pt-10 relative">
-                <Image
-                  className="w-20 absolute h-20 m-auto"
-                  src={Ellipse4}
-                  alt="Ellipse4"
-                  style={{ top: '-50px', right: '20px' }}
-                />
-                <div className="text-xl font-bold">
-                  <Image
-                    className="w-20 absolute h-20 m-auto"
-                    src={Ellipse5}
-                    alt="Ellipse5"
-                    style={{ top: '100px', right: '-50px' }}
-                  />
-                  Unique Gaming ID
+            <div className="relative md:px-1 lg:px-8">
+              <div className="flex flex-col">
+                <div className="relative">
+                  <div className="flex flex-col">
+                    <Image
+                      className="w-28 h-28 m-auto"
+                      src={Ellipse4}
+                      alt="Ellipse4"
+                    />
+                    <div>
+                      <div className="flex">
+                        <div>
+                          <div className="text-xl text-left font-bold text-black">
+                            Social Features
+                          </div>
+                          <div className="text-base mt-2 font-poppinsLight text-black">
+                            Enoobs integrates community, messaging, streaming,
+                            sharing, and tagging features tailored specifically
+                            to the preferences and needs of the gaming
+                            community. These functionalities cater to the unique
+                            requirements of gamers, fostering a cohesive
+                            environment where they can connect, communicate,
+                            share content, and engage with one another
+                            seamlessly.
+                          </div>
+                        </div>
+                        <Image
+                          className="w-30 h-30 mt-48"
+                          src={Ellipse5}
+                          alt="Ellipse5"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-base font-poppinsLight">
-                  It is a long established fact that a reader will <br></br> be
-                  distracted by the readable.
-                </div>
-              </div>
-              <div className="pt-20 relative">
-                <Image
-                  className="w-20 absolute h-20 m-auto"
-                  src={Ellipse6}
-                  alt="Ellipse6"
-                  style={{ top: '170px', right: '10px' }}
-                />
-
-                <div className="text-xl font-bold">Unique Gaming ID</div>
-                <div className="text-base font-poppinsLight">
-                  It is a long established fact that a reader will <br></br> be
-                  distracted by the readable.
+                <div>
+                  <div className="pt-10 flex flex-col relative">
+                    <div className="pr-20">
+                      <div className="text-xl font-bold text-black">
+                        Gamers Community
+                      </div>
+                      <div className="text-base mt-2 font-poppinsLight text-black">
+                        Enoobs is dedicated to gamers, offering a space for
+                        seamless connection, collaboration, and community
+                        building. Through forums, chat rooms, groups, and
+                        events, we foster vibrant interactions and meaningful
+                        connections based on shared interests and experiences,
+                        enhancing the gaming journey for all.
+                      </div>
+                    </div>
+                    <div className="w-full">
+                      <Image
+                        className="w-30 h-30 mr-0 float-right"
+                        src={Ellipse6}
+                        alt="Ellipse6"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-dark-blue md:px-20 lg:px-20 px-10 py-10  md:h-500 lg:h-500">
-        <div className="pt-10 text-center text-white text-2xl">
+      <section className="bg-dark-blue md:px-20 lg:px-20 px-10 py-10  md:h-816 lg:h-816">
+        <div className="pt-10 text-center text-white text-4xl">
           <div className="font-poppins"> Supported Web3-Games</div>
         </div>
-        <div className=" w-full pt-5 overflow-auto">
-          <div className="flex m-auto justify-center">
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Sorare
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Planet IX
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                The Sandbox
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Axie Infinity
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Illuvium
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Decentraland
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Aurory
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                DeFi Land
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                Funfair
-              </div>
-            </div>
-            <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
-            <div className="flex rounded-full mr-3 w-24 text-center py-1 px-2 justify-center text-white">
-              <div className="ml-1 text-base font-poppinsLight font-extralight">
-                CryptoKitties
-              </div>
-            </div>
+        <div className=" w-full pt-5 slider overflow-hidden">
+          <div className="flex m-auto slider-track justify-center">
+            {games.map((game, i) => {
+              return (
+                <div key={i} className="slide">
+                  <div
+                    className={`flex rounded-full mr-3 w-40  text-center py-1 px-2 justify-center text-white`}
+                  >
+                    <div className="ml-1 text-base font-poppinsLight font-extralight">
+                      {game}
+                    </div>
+                  </div>
+                  <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
+                </div>
+              );
+            })}
           </div>
         </div>
-        <div className="flex border-t border-slate-700 mt-8 pt-10  text-white">
-          <div className="basis-1/2 text-2xl">
+        <div className="flex border-t border-slate-700 mt-8 pt-20 text-white">
+          <div className="basis-1/2 text-4xl font-bold">
             Lorem Ipsum is simply <br></br> dummy text of the
           </div>
           <div className="basis-1/2 text-base font-poppinsLight font-extralight mt-4 h-8 border-l-2 pl-4 border-main-green">
@@ -327,14 +464,18 @@ const Content = () => {
             the readable content of a page when looking at its layout.
           </div>
         </div>
-        <div className="flex grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 mt-10 justify-center">
+        <div className=" grid gap-28 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mt-20 justify-center">
           <div className="p-4 bg-white mt-2 md:mt-0 lg:mt-0 rounded-md text-center mr-0 md:mr-4 lg:mr-4 shadow-card">
             <div className="text-xl font-bold text-black">Feature 1</div>
             <div className="text-base font-poppinsLight text-black">
               It is a long established fact that a reader will <br></br> be
               distracted by the readable.
             </div>
-            <Image className="w-28 h-60 m-auto mt-5" src={Mobile} alt="phone" />
+            <Image
+              className="w-56 h-450 m-auto mt-5"
+              src={Mobile}
+              alt="phone"
+            />
           </div>
           <div className="p-4 bg-white mt-2 md:mt-0 lg:mt-0 rounded-md text-center mr-0 md:mr-4 lg:mr-4 shadow-card">
             <div className="block md:hidden lg:hidden">
@@ -344,7 +485,7 @@ const Content = () => {
                 distracted by the readable.
               </div>
             </div>
-            <Image className="w-28 h-60 m-auto " src={Mobile} alt="phone" />
+            <Image className="w-56 h-450 m-auto " src={Mobile} alt="phone" />
             <div className="hidden md:block lg:block">
               <div className="text-xl font-bold text-black mt-5">Feature 2</div>
               <div className="text-base font-poppinsLight text-black">
@@ -353,99 +494,91 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="p-4 bg-white mt-2 md:mt-0 lg:mt-0 rounded-md text-center mr-0 md:mr-4 lg:mr-4 shadow-card">
-            <div className="text-xl font-bold text-black">Feature 3</div>
-            <div className="text-base font-poppinsLight text-black">
-              It is a long established fact that a reader will <br></br> be
-              distracted by the readable.
-            </div>
-            <Image className="w-28 h-60 m-auto mt-5" src={Mobile} alt="phone" />
-          </div>
         </div>
       </section>
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
-        <div className="pt-10 mt-0 md:mt-60 lg:mt-60 text-center text-2xl">
+        <div className="pt-10 mt-0 md:mt-60 lg:mt-60 text-center text-4xl">
           <div className="font-poppins text-black"> Roadmap</div>
-          <div className="flex grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 mt-10 justify-center">
+          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 mt-10 justify-center">
             <div className="basis-1/2">
               <div className="flex">
-                <Image className="h-12 w-10" src={FirstFlag} alt="first" />
-                <div className="w-full hidden md:block lg:block h-px border-t-2 border-main-green mt-8 "></div>
+                <Image className="h-20 w-16" src={FirstFlag} alt="first" />
+                <div className="w-full hidden md:block lg:block h-px border-t-2 border-main-green mt-14 "></div>
               </div>
-              <div className="text-base font-poppinsLight text-left mr-4">
-                <div className="font-bold bg-text-bg text-black mt-2 w-fit p-1">
+              <div className="text-base  text-left mr-4">
+                <div className="font-black bg-text-bg text-black mt-2 w-fit p-1">
                   2023
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   Lorem Ipsum is simply dummy text of.
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   Lorem Ipsum is simply dummy text of.
                 </div>
               </div>
             </div>
             <div className="basis-1/2 mt-10 md:mt-0 lg:mt-0">
               <div className="flex ">
-                <Image className="h-12 w-10" src={SecondFlag} alt="first" />
-                <div className="w-full hidden md:block lg:block h-px border-t-2 border-dashed border-main-green mt-8 "></div>
+                <Image className="h-20 w-16" src={SecondFlag} alt="first" />
+                <div className="w-full hidden md:block lg:block h-px border-t-2 border-dashed border-main-green mt-14 "></div>
               </div>
-              <div className="text-base font-poppinsLight text-left mr-4">
-                <div className="font-bold bg-text-bg text-black mt-2 w-fit p-1">
+              <div className="text-base text-left mr-4">
+                <div className="font-black bg-text-bg text-black mt-2 w-fit p-1">
                   2024
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   Lorem Ipsum is simply dummy text of.
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   Lorem Ipsum is simply dummy text of.
                 </div>
               </div>
             </div>
             <div className="basis-1/2 mt-10 md:mt-0 lg:mt-0">
               <div className="flex">
-                <Image className="h-12 w-10" src={ThirdFlag} alt="first" />
-                <div className="w-full hidden md:block lg:block h-px border-t-2 border-dashed border-slate-200 mt-8 "></div>
+                <Image className="h-20 w-16" src={ThirdFlag} alt="first" />
+                <div className="w-full hidden md:block lg:block h-px border-t-2 border-dashed border-slate-200 mt-14 "></div>
               </div>
-              <div className="text-base font-poppinsLight text-left mr-4">
-                <div className="font-bold bg-text-bg text-black mt-2 w-fit p-1">
+              <div className="text-base text-left mr-4">
+                <div className="font-black bg-text-bg text-black mt-2 w-fit p-1">
                   2025
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   Lorem Ipsum is simply dummy text of.
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   Lorem Ipsum is simply dummy text of.
                 </div>
               </div>
             </div>
             <div className="basis-1/2 mt-10 md:mt-0 lg:mt-0">
               <div className="flex">
-                <Image className="h-12 w-10" src={FourthFlag} alt="first" />
+                <Image className="h-20 w-16" src={FourthFlag} alt="first" />
               </div>
-              <div className="text-base font-poppinsLight text-left mr-4">
-                <div className="font-bold bg-text-bg text-black mt-2 w-fit p-1">
+              <div className="text-base text-left mr-4">
+                <div className="font-black bg-text-bg text-black mt-2 w-fit p-1">
                   2026
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   Lorem Ipsum is simply dummy text of.
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </div>
-                <div className="bg-text-bg mt-2 p-1 text-black">
+                <div className="bg-text-bg mt-2 p-1 font-poppinsLight text-black">
                   Lorem Ipsum is simply dummy text of.
                 </div>
               </div>
@@ -454,18 +587,18 @@ const Content = () => {
         </div>
       </section>
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
-        <div className="pt-10 text-center text-2xl">
+        <div className="pt-10 text-center text-4xl">
           <div className="font-poppins text-black"> Meet the team</div>
-          <div className="pt-6 text-base font-poppinsLight text-black font-extralight">
+          <div className="pt-5 text-base font-poppinsLight text-main-gray">
             It is a long established fact that a reader will be distracted{' '}
             <br></br> by the readable content of a page.
           </div>
         </div>
-        <div className="flex w-full flex-row mt-10 grid lg:grid-cols-4 md:grid-cols-2 justify-center">
+        <div className=" w-full flex-row mt-10 grid lg:grid-cols-4 md:grid-cols-2 justify-center">
           <div className="w-fit mx-auto">
-            <Image className="w-60 h-56" src={Team1} alt="team-1" />
-            <div className="w-60 h-56 bg-dark-blue p-4">
-              <div className="text-2xl font-bold text-white">Anish Kapoor</div>
+            <Image className="w-257 h-230" src={Team1} alt="team-1" />
+            <div className="w-257 h-230 bg-dark-blue p-4">
+              <div className="text-4xl font-bold text-white">Anish Kapoor</div>
               <div className="text-md my-2 font-light text-white">
                 Chief Executive Officer
               </div>
@@ -480,9 +613,11 @@ const Content = () => {
             </div>
           </div>
           <div className="w-fit mt-10 md:mt-0 lg:mt-0 mx-auto">
-            <Image className="w-60 h-56" src={Team2} alt="team-1" />
-            <div className="w-60 h-56 bg-dark-blue p-4">
-              <div className="text-2xl font-bold text-white">Ved Prakash</div>
+            <Image className="w-257 h-230" src={Team2} alt="team-1" />
+            <div className="w-257 h-230 bg-dark-blue p-4">
+              <div className="text-4xl font-bold text-white">
+                Ved <br></br> Prakash
+              </div>
               <div className="text-md my-2 font-light text-white">
                 Chief Technology Officer
               </div>
@@ -497,9 +632,9 @@ const Content = () => {
             </div>
           </div>
           <div className="w-fit mt-10 md:mt-10 lg:mt-0 mx-auto">
-            <Image className="w-60 h-56" src={Team3} alt="team-1" />
-            <div className="w-60 h-56 bg-dark-blue p-4">
-              <div className="text-2xl font-bold text-white">
+            <Image className="w-257 h-230" src={Team3} alt="team-1" />
+            <div className="w-257 h-230 bg-dark-blue p-4">
+              <div className="text-4xl font-bold text-white">
                 Gagandeep Singh
               </div>
               <div className="text-md my-2 font-light text-white">
@@ -516,9 +651,9 @@ const Content = () => {
             </div>
           </div>
           <div className="w-fit mt-10 md:mt-10 lg:mt-0 mx-auto">
-            <Image className="w-60 h-56" src={Team4} alt="team-1" />
-            <div className="w-60 h-56 bg-dark-blue p-4">
-              <div className="text-2xl font-bold text-white">
+            <Image className="w-257 h-230" src={Team4} alt="team-1" />
+            <div className="w-257 h-230 bg-dark-blue p-4">
+              <div className="text-4xl font-bold text-white">
                 Vishvanath Reddy
               </div>
               <div className="text-md my-2 font-light text-white">
@@ -537,7 +672,7 @@ const Content = () => {
         </div>
       </section>
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
-        <div className="flex grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1">
+        <div className=" grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1">
           <div>
             <div className="text-5xl font-bold text-black">
               Frequently asked questions
@@ -551,52 +686,49 @@ const Content = () => {
       </section>
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
         <div className="flex md:text-left lg:text-left text-center lg:flex-row md:flex-row flex-col ">
-          <div className="text-5xl font-bold">
+          <div className="text-7xl font-bold">
             <span className="text-black"> Say </span>
             <span className="text-main-green"> hello. </span>
           </div>
-          <div className="ml-4 mt-6 md:mt-1 lg:mt-1 text-base font-poppinsLight font-medium text-main-gray">
+          <div className="ml-4 mt-8 md:mt-1 lg:mt-1 text-base font-poppinsLight font-medium text-main-gray">
             Feel free to drop us an email anytime.<br></br> We’d love to hear
             from you.
           </div>
         </div>
         <div className="mt-12 ">
-          <div className="flex grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 justify-between">
+          <div className=" grid gap-20 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 justify-between">
             <div>
               <form>
                 <div className="flex flex-col md:flex-row lg:flex-row">
-                  <div className="relative basis-full md:basis-1/2 lg:basis-1/2 mt-4">
-                    <label
-                      htmlFor="firstName"
-                      className="pl-3 text-main-green text-black"
-                    >
-                      First Name
+                  <div className="relative basis-full md:basis-1/2 lg:basis-1/2 mt-10">
+                    <label htmlFor="fullName" className="pl-3 text-main-green">
+                      Full Name
                     </label>
                     <input
                       type="text"
-                      name="firstName"
-                      id="firstName"
+                      name="fullName"
+                      id="fullName"
                       className="block w-full border-b py-1.5 pl-3 pr-20 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                       placeholder="First name"
                     />
                   </div>
-                  <div className="relative md:basis-1/2 lg:basis-1/2 mt-4">
+                  <div className="relative md:basis-1/2 lg:basis-1/2 mt-10">
                     <label
-                      htmlFor="lastName"
+                      htmlFor="email"
                       className="pl-3 text-main-green text-black"
                     >
-                      Last Name
+                      Email
                     </label>
                     <input
                       type="text"
-                      name="lastName"
-                      id="lastName"
+                      name="email"
+                      id="email"
                       className="block w-full border-b py-1.5 pl-3 pr-20 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                       placeholder="Last name"
                     />
                   </div>
                 </div>
-                <div className="relative mt-4">
+                <div className="relative mt-10">
                   <label
                     htmlFor="subject"
                     className="pl-3 text-main-green text-black"
@@ -611,7 +743,7 @@ const Content = () => {
                     placeholder="Subject"
                   />
                 </div>
-                <div className="relative mt-4">
+                <div className="relative mt-10">
                   <label
                     htmlFor="message"
                     className="pl-3 text-main-green text-black"
@@ -626,21 +758,23 @@ const Content = () => {
                     placeholder="Message"
                   />
                 </div>
-                <button className="mt-4 text-white cursor-pointer text-base font-poppinsLight py-2 px-4 rounded-full bg-black">
+                <button className="mt-10 text-white cursor-pointer text-base font-poppinsLight py-2.5 px-4 rounded-full bg-black">
                   Send Message
                 </button>
               </form>
             </div>
             <div className="mt-10 md:mt-10 lg:mt-0 ml-0 lg:ml-10 md:ml-0">
-              <div className="text-2xl text-black font-medium">Need help?</div>
-              <div className="text-base font-poppinsLight font-medium mt-5  text-main-gray">
+              <div className="text-5xl font-poppinsLight text-black ">
+                Need help?
+              </div>
+              <div className="text-base font-poppinsLight font-medium mt-10  text-main-gray">
                 If you are already a Enoobs member and you are having a
                 <br className="hidden md:block lg:block"></br>
                 {` Enoobs related question or problem, please contact to our`}
                 <br className="hidden md:block lg:block"></br>
                 support team and they will get back to you shortly.
               </div>
-              <button className="mt-4 text-white cursor-pointer text-base font-poppinsLight py-2 px-4 rounded-full bg-black">
+              <button className="mt-10 text-white cursor-pointer text-base font-poppinsLight py-2.5 px-4 rounded-full bg-black">
                 Contact Support
               </button>
             </div>
