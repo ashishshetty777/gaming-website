@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="min-h-full px-7 pt-7 pb-11 lg:pb-7 md:pb-7 bg-dark-blue z-50 relative">
+    <div className=" px-7 pt-20 pb-20 lg:pb-7 md:pb-7 bg-dark-blue z-50 relative">
       <div className="block lg:hidden md:hidden">
         <Link href="/" className="-m-1.5 p-1.5">
           <Image
@@ -17,9 +17,9 @@ const Footer = () => {
             alt=""
           ></Image>
         </Link>
-        <div className="mt-6 lg:text-left md:text-left text-md font-extralight text-white text-center">
+        <div className=" lg:text-left md:text-left text-md font-extralight text-white text-center">
           <Image
-            className="sm:basis-full h-22 w-44 m-auto md:float-left lg:float-left"
+            className="sm:basis-full h-22 w-44 m-auto md:float-left mt-5 lg:float-left"
             src={GooglePlayBtn}
             alt=""
           ></Image>
@@ -34,9 +34,9 @@ const Footer = () => {
               alt=""
             ></Image>
           </Link>
-          <div className="mt-6 lg:text-left md:text-left text-md font-extralight text-white text-center">
+          <div className="lg:text-left md:text-left text-md font-extralight text-white text-center">
             <Image
-              className="sm:basis-full h-22 w-44 m-auto md:float-left lg:float-left"
+              className="sm:basis-full h-22 w-44 m-auto md:float-left mt-10 lg:float-left"
               src={GooglePlayBtn}
               alt=""
             ></Image>

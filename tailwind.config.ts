@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        midsection: '40% 20% 40%',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -48,9 +51,12 @@ const config: Config = {
       height: {
         500: '500px',
         816: '816px',
+        450: '450px',
+        230: '230px',
       },
       width: {
         '35rem': '35rem',
+        257: '257px',
       },
       fontFamily: {
         poppins: ['var(--poppins)'],
