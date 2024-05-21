@@ -464,34 +464,47 @@ const Content = () => {
             the readable content of a page when looking at its layout.
           </div>
         </div>
-        <div className=" grid gap-28 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mt-20 justify-center">
-          <div className="p-4 bg-white mt-2 md:mt-0 lg:mt-0 rounded-md text-center mr-0 md:mr-4 lg:mr-4 shadow-card">
-            <div className="text-xl font-bold text-black">Feature 1</div>
-            <div className="text-base font-poppinsLight text-black">
-              It is a long established fact that a reader will <br></br> be
-              distracted by the readable.
+        <div className=" grid gap-10 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mt-20 justify-center">
+          <div className="p-4 bg-white mt-2 mb-2 md:mt-0 lg:mt-0 rounded-md text-center mr-0 md:mr-4 lg:mr-4 shadow-card">
+            <div className="text-3xl mt-2 font-bold text-black">
+              Personalized Gaming Profile
             </div>
-            <Image
-              className="w-56 h-450 m-auto mt-5"
-              src={Mobile}
-              alt="phone"
-            />
+            <div className="flex md:flex-col lg:flex-row flex-col mt-4">
+              <div className="text-base m-auto text-left font-poppinsLight text-black basis-2/5">
+                Imagine a single profile that encapsulates every facet of your
+                gaming journey, allowing you to authentically rediscover and
+                celebrate your gaming identity. At our core, we firmly believe
+                in empowering you with complete ownership of your gaming
+                profile. Furthermore, we advocate for acknowledging and
+                rewarding your dedication, skill, and achievements across
+                diverse gaming titles.
+              </div>
+              <Image
+                className="w-56 h-500 m-auto basis-2/4"
+                src={Mobile}
+                alt="phone"
+              />
+            </div>
           </div>
-          <div className="p-4 bg-white mt-2 md:mt-0 lg:mt-0 rounded-md text-center mr-0 md:mr-4 lg:mr-4 shadow-card">
-            <div className="block md:hidden lg:hidden">
-              <div className="text-xl font-bold text-black">Feature 2</div>
-              <div className="text-base font-poppinsLight mb-5 text-black">
-                It is a long established fact that a reader will <br></br> be
-                distracted by the readable.
-              </div>
+          <div className="p-4 bg-white mt-2 mb-2 md:mt-0 lg:mt-0 rounded-md text-center mr-0 md:mr-4 lg:mr-4 shadow-card">
+            <div className="text-3xl mt-2 font-bold text-black">
+              Personalized Gaming Profile
             </div>
-            <Image className="w-56 h-450 m-auto " src={Mobile} alt="phone" />
-            <div className="hidden md:block lg:block">
-              <div className="text-xl font-bold text-black mt-5">Feature 2</div>
-              <div className="text-base font-poppinsLight text-black">
-                It is a long established fact that a reader will <br></br> be
-                distracted by the readable.
+            <div className="flex md:flex-col-reverse lg:flex-row flex-col-reverse mt-4">
+              <div className="text-base m-auto text-left font-poppinsLight text-black basis-2/5">
+                Imagine a single profile that encapsulates every facet of your
+                gaming journey, allowing you to authentically rediscover and
+                celebrate your gaming identity. At our core, we firmly believe
+                in empowering you with complete ownership of your gaming
+                profile. Furthermore, we advocate for acknowledging and
+                rewarding your dedication, skill, and achievements across
+                diverse gaming titles.
               </div>
+              <Image
+                className="w-56 h-500 m-auto basis-2/4"
+                src={Mobile}
+                alt="phone"
+              />
             </div>
           </div>
         </div>
