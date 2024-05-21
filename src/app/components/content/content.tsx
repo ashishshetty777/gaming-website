@@ -136,7 +136,7 @@ const Content = () => {
               Gaming ID
             </div>
           </div>
-          <div className="pt-6 font-poppinsLight relative font-extralight">
+          <div className="pt-6 text-center font-poppinsLight relative font-extralight">
             <div className="testimonial-slider">
               <ul className="slider">
                 <li>
@@ -257,41 +257,39 @@ const Content = () => {
             </div>
             <div className="mt-5">
               <div className="text-xl font-bold text-black">
-                Creator Economy
+                Dedicated Social Gaming Space
               </div>
               <div className="text-base font-poppinsLight text-black">
-                Enoobs prioritizes empowering gamers as creators, providing
-                avenues for monetization through subscriptions, tipping, ad
-                revenue sharing, and sponsored content. By enabling creators to
-                earn from their content. This approach not only benefits
-                individual creators but also enriches the overall gaming
-                community by incentivizing innovation and quality content
-                creation.
+                Enoobs offers a dedicated social media space for gamers to
+                connect, share, and build communities using their universal
+                gaming IDs. This allows users to join and host gaming
+                communities, post updates, showcase skills, and communicate with
+                fellow gamers.
               </div>
             </div>
             <div className="mt-5">
               <div className="text-xl font-bold text-black">
-                Social Features:
+                Stats Aggregator
               </div>
               <div className="text-base font-poppinsLight text-black">
-                Enoobs integrates community, messaging, streaming, sharing, and
-                tagging features tailored specifically to the preferences and
-                needs of the gaming community. These functionalities cater to
-                the unique requirements of gamers, fostering a cohesive
-                environment where they can connect, communicate, share content,
-                and engage with one another seamlessly.
+                Our stats aggregator compiles gaming statistics and achievements
+                from our partner platforms, consolidating them into a single,
+                comprehensive profile linked to the gamer's universal ID. This
+                feature enables gamers to showcase their skills, track their
+                progress, and gain and monetize their recognition.
               </div>
             </div>
             <div className="mt-5">
               <div className="text-xl font-bold text-black">
-                Gamers Community
+                Tournaments/Events Management
               </div>
               <div className="text-base font-poppinsLight text-black">
-                Enoobs is dedicated to gamers, offering a space for seamless
-                connection, collaboration, and community building. Through
-                forums, chat rooms, groups, and events, we foster vibrant
-                interactions and meaningful connections based on shared
-                interests and experiences, enhancing the gaming journey for all
+                Gamers can use Enoobs to gather all information about upcoming
+                tournaments and events and the ones they participate in. They
+                can consolidate their progress on their universal ID. This helps
+                them keep track of their competitive engagements and
+                achievements and brings opportunities for further participation,
+                recognition, and monetization.
               </div>
             </div>
           </div>
@@ -338,17 +336,14 @@ const Content = () => {
                   <div className="pt-10 flex flex-col relative">
                     <div className="pl-20">
                       <div className="text-xl font-bold text-black">
-                        Creator Economy
+                        Dedicated Social Gaming Space
                       </div>
                       <div className="text-base mt-2 font-poppinsLight text-black">
-                        Enoobs prioritizes empowering gamers as creators,
-                        providing avenues for monetization through
-                        subscriptions, tipping, ad revenue sharing, and
-                        sponsored content. By enabling creators to earn from
-                        their content. This approach not only benefits
-                        individual creators but also enriches the overall gaming
-                        community by incentivizing innovation and quality
-                        content creation.
+                        Enoobs offers a dedicated social media space for gamers
+                        to connect, share, and build communities using their
+                        universal gaming IDs. This allows users to join and host
+                        gaming communities, post updates, showcase skills, and
+                        communicate with fellow gamers.
                       </div>
                     </div>
                     <div className="w-full">
@@ -382,17 +377,16 @@ const Content = () => {
                       <div className="flex">
                         <div>
                           <div className="text-xl text-left font-bold text-black">
-                            Social Features
+                            Tournaments/Events Management
                           </div>
                           <div className="text-base mt-2 font-poppinsLight text-black">
-                            Enoobs integrates community, messaging, streaming,
-                            sharing, and tagging features tailored specifically
-                            to the preferences and needs of the gaming
-                            community. These functionalities cater to the unique
-                            requirements of gamers, fostering a cohesive
-                            environment where they can connect, communicate,
-                            share content, and engage with one another
-                            seamlessly.
+                            Gamers can use Enoobs to gather all information
+                            about upcoming tournaments and events and the ones
+                            they participate in. They can consolidate their
+                            progress on their universal ID. This helps them keep
+                            track of their competitive engagements and
+                            achievements and brings opportunities for further
+                            participation, recognition, and monetization.
                           </div>
                         </div>
                         <Image
@@ -408,15 +402,15 @@ const Content = () => {
                   <div className="pt-10 flex flex-col relative">
                     <div className="pr-20">
                       <div className="text-xl font-bold text-black">
-                        Gamers Community
+                        Stats Aggregator
                       </div>
                       <div className="text-base mt-2 font-poppinsLight text-black">
-                        Enoobs is dedicated to gamers, offering a space for
-                        seamless connection, collaboration, and community
-                        building. Through forums, chat rooms, groups, and
-                        events, we foster vibrant interactions and meaningful
-                        connections based on shared interests and experiences,
-                        enhancing the gaming journey for all.
+                        Our stats aggregator compiles gaming statistics and
+                        achievements from our partner platforms, consolidating
+                        them into a single, comprehensive profile linked to the
+                        gamer's universal ID. This feature enables gamers to
+                        showcase their skills, track their progress, and gain
+                        and monetize their recognition.
                       </div>
                     </div>
                     <div className="w-full">
@@ -443,7 +437,7 @@ const Content = () => {
               return (
                 <div key={i} className="slide">
                   <div
-                    className={`flex rounded-full mr-3 w-40  text-center py-1 px-2 justify-center text-white`}
+                    className={`flex rounded-full mr-3 w-36  text-center py-1 px-2 justify-center text-white`}
                   >
                     <div className="ml-1 text-base font-poppinsLight font-extralight">
                       {game}
@@ -600,8 +594,8 @@ const Content = () => {
         </div>
       </section>
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
-        <div className="pt-10 text-center text-4xl">
-          <div className="font-poppins text-black"> Meet the team</div>
+        <div id="team" className="pt-10 text-center text-4xl">
+          <div className="font-poppins text-black">Meet the team</div>
           <div className="pt-5 text-base font-poppinsLight text-main-gray">
             It is a long established fact that a reader will be distracted{' '}
             <br></br> by the readable content of a page.
@@ -609,9 +603,11 @@ const Content = () => {
         </div>
         <div className=" w-full flex-row mt-10 grid lg:grid-cols-4 md:grid-cols-2 justify-center">
           <div className="w-fit mx-auto">
-            <Image className="w-257 h-230" src={Team1} alt="team-1" />
-            <div className="w-257 h-230 bg-dark-blue p-4">
-              <div className="text-4xl font-bold text-white">Anish Kapoor</div>
+            <Image className="w-72 h-230" src={Team1} alt="team-1" />
+            <div className="w-72 h-230 bg-dark-blue p-4">
+              <div className="text-4xl font-bold text-white">
+                Anish <br></br> Kapoor
+              </div>
               <div className="text-md my-2 font-light text-white">
                 Chief Executive Officer
               </div>
@@ -626,8 +622,8 @@ const Content = () => {
             </div>
           </div>
           <div className="w-fit mt-10 md:mt-0 lg:mt-0 mx-auto">
-            <Image className="w-257 h-230" src={Team2} alt="team-1" />
-            <div className="w-257 h-230 bg-dark-blue p-4">
+            <Image className="w-72 h-230" src={Team2} alt="team-1" />
+            <div className="w-72 h-230 bg-dark-blue p-4">
               <div className="text-4xl font-bold text-white">
                 Ved <br></br> Prakash
               </div>
@@ -645,8 +641,8 @@ const Content = () => {
             </div>
           </div>
           <div className="w-fit mt-10 md:mt-10 lg:mt-0 mx-auto">
-            <Image className="w-257 h-230" src={Team3} alt="team-1" />
-            <div className="w-257 h-230 bg-dark-blue p-4">
+            <Image className="w-72 h-230" src={Team3} alt="team-1" />
+            <div className="w-72 h-230 bg-dark-blue p-4">
               <div className="text-4xl font-bold text-white">
                 Gagandeep Singh
               </div>
@@ -664,8 +660,8 @@ const Content = () => {
             </div>
           </div>
           <div className="w-fit mt-10 md:mt-10 lg:mt-0 mx-auto">
-            <Image className="w-257 h-230" src={Team4} alt="team-1" />
-            <div className="w-257 h-230 bg-dark-blue p-4">
+            <Image className="w-72 h-230" src={Team4} alt="team-1" />
+            <div className="w-72 h-230 bg-dark-blue p-4">
               <div className="text-4xl font-bold text-white">
                 Vishvanath Reddy
               </div>
@@ -697,7 +693,10 @@ const Content = () => {
           <Faq />
         </div>
       </section>
-      <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
+      <section
+        id="contact-us"
+        className="bg-text-bg md:px-20 lg:px-20 px-10 py-10"
+      >
         <div className="flex md:text-left lg:text-left text-center lg:flex-row md:flex-row flex-col ">
           <div className="text-7xl font-bold">
             <span className="text-black"> Say </span>
@@ -708,20 +707,87 @@ const Content = () => {
             from you.
           </div>
         </div>
-        <div className="mt-12 ">
-          <div className=" grid gap-20 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 justify-between">
-            <div>
-              <form>
-                <div className="flex flex-col md:flex-row lg:flex-row">
-                  <div className="relative basis-full md:basis-1/2 lg:basis-1/2 mt-10">
+        <div className="mt-12 flex flex-col ">
+          <form>
+            <div className="flex flex-col md:flex-row lg:flex-row">
+              <div className="relative mt-10 basis-2/6">
+                <div className="flex flex-col px-5">
+                  <div className="basis-1/2">
+                    <label htmlFor="name" className=" text-main-gray">
+                      What should we call you?
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      className="block w-full mt-2 border py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div className="basis-1/2 mt-7">
+                    <label htmlFor="phone" className=" text-main-gray">
+                      What is your mobile number?
+                    </label>
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      className="block w-full mt-2 border py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="relative mt-10 basis-2/6">
+                <div className="flex flex-col px-5">
+                  <div className="basis-1/2">
+                    <label htmlFor="email" className=" text-main-gray">
+                      What is your email id?
+                    </label>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      className="block w-full mt-2 border py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div className="basis-1/2 mt-7">
+                    <label htmlFor="subject" className=" text-main-gray">
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      name="subject"
+                      id="subject"
+                      className="block w-full border mt-2 py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
+                      placeholder="Your subject"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="basis-2/6">
+                <div className="mt-10 px-5">
+                  <label htmlFor="message" className=" text-main-gray">
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    className="block h-40 mt-2 w-full border py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+              </div>
+              {/* <div className="relative basis-full md:basis-1/2 lg:basis-1/2 mt-10">
                     <label htmlFor="fullName" className="pl-3 text-main-green">
-                      Full Name
+                      What should we call you?
                     </label>
                     <input
                       type="text"
                       name="fullName"
                       id="fullName"
-                      className="block w-full border-b py-1.5 pl-3 pr-20 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                      className="block w-full border py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
                       placeholder="First name"
                     />
                   </div>
@@ -730,67 +796,22 @@ const Content = () => {
                       htmlFor="email"
                       className="pl-3 text-main-green text-black"
                     >
-                      Email
+                      What is your email address?
                     </label>
                     <input
                       type="text"
                       name="email"
                       id="email"
-                      className="block w-full border-b py-1.5 pl-3 pr-20 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                      className="block w-full border-b py-1.5 pl-3 pr-20 placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
                       placeholder="Last name"
                     />
-                  </div>
-                </div>
-                <div className="relative mt-10">
-                  <label
-                    htmlFor="subject"
-                    className="pl-3 text-main-green text-black"
-                  >
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    className="block w-full border-b py-1.5 pl-3 pr-20 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div className="relative mt-10">
-                  <label
-                    htmlFor="message"
-                    className="pl-3 text-main-green text-black"
-                  >
-                    Message
-                  </label>
-                  <input
-                    type="text"
-                    name="message"
-                    id="message"
-                    className="block w-full border-b py-1.5 pl-3 pr-20 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-                    placeholder="Message"
-                  />
-                </div>
-                <button className="mt-10 text-white cursor-pointer text-base font-poppinsLight py-2.5 px-4 rounded-full bg-black">
-                  Send Message
-                </button>
-              </form>
+                  </div> */}
             </div>
-            <div className="mt-10 md:mt-10 lg:mt-0 ml-0 lg:ml-10 md:ml-0">
-              <div className="text-5xl font-poppinsLight text-black ">
-                Need help?
-              </div>
-              <div className="text-base font-poppinsLight font-medium mt-10  text-main-gray">
-                If you are already a Enoobs member and you are having a
-                <br className="hidden md:block lg:block"></br>
-                {` Enoobs related question or problem, please contact to our`}
-                <br className="hidden md:block lg:block"></br>
-                support team and they will get back to you shortly.
-              </div>
-              <button className="mt-10 text-white cursor-pointer text-base font-poppinsLight py-2.5 px-4 rounded-full bg-black">
-                Contact Support
-              </button>
-            </div>
+          </form>
+          <div className="w-full">
+            <button className="mt-10 mr-5 float-right text-white cursor-pointer text-base font-poppinsLight py-2.5 px-5 rounded-full bg-main-green">
+              Send Message
+            </button>
           </div>
         </div>
       </section>
