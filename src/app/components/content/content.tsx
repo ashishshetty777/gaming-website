@@ -28,6 +28,8 @@ import Ellipse5 from '../../../../public/assets/Ellipse5.png';
 import Ellipse6 from '../../../../public/assets/Ellipse6.png';
 import Circle from '../../../../public/assets/Circle.png';
 import Faq from '../faqs/faqs';
+import { WobbleCard } from '../ui/wobble-card';
+import { WobbleCardDemo } from '../wobble';
 const Content = () => {
   let games = [
     'Pegaxy',
@@ -111,6 +113,7 @@ const Content = () => {
     'Alien Worlds',
     'Splinterlands',
   ];
+
   return (
     <>
       <div className="bg-black lg:bg-unset md:bg-unset">
@@ -427,7 +430,7 @@ const Content = () => {
           </div>
         </div>
       </section>
-      <section className="bg-dark-blue md:px-20 lg:px-20 px-10 py-10  md:h-816 lg:h-816">
+      <section className="bg-dark-blue md:px-20 lg:px-20 px-10 py-10">
         <div className="pt-10 text-center text-white text-4xl">
           <div className="font-poppins"> Supported Web3-Games</div>
         </div>
@@ -458,7 +461,10 @@ const Content = () => {
             the readable content of a page when looking at its layout.
           </div>
         </div>
-        <div className=" grid gap-10 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mt-20 justify-center">
+        <div className="mt-20">
+          <WobbleCardDemo />
+        </div>
+        {/* <div className=" grid gap-10 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mt-20 justify-center">
           <div className="p-4 bg-white mt-2 mb-2 md:mt-0 lg:mt-0 rounded-md text-center mr-0 md:mr-4 lg:mr-4 shadow-card">
             <div className="text-3xl mt-2 font-bold text-black">
               Personalized Gaming Profile
@@ -501,10 +507,10 @@ const Content = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
-        <div className="pt-10 mt-0 md:mt-60 lg:mt-60 text-center text-4xl">
+        <div className="pt-10 mt-0 text-center text-4xl">
           <div className="font-poppins text-black"> Roadmap</div>
           <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 mt-10 justify-center">
             <div className="basis-1/2">
@@ -715,6 +721,7 @@ const Content = () => {
                   <div className="basis-1/2">
                     <label htmlFor="name" className=" text-main-gray">
                       What should we call you?
+                      <span className="text-red-400">*</span>
                     </label>
                     <input
                       type="text"
@@ -727,6 +734,7 @@ const Content = () => {
                   <div className="basis-1/2 mt-7">
                     <label htmlFor="phone" className=" text-main-gray">
                       What is your mobile number?
+                      <span className="text-red-400">*</span>
                     </label>
                     <input
                       type="text"
@@ -743,6 +751,7 @@ const Content = () => {
                   <div className="basis-1/2">
                     <label htmlFor="email" className=" text-main-gray">
                       What is your email id?
+                      <span className="text-red-400">*</span>
                     </label>
                     <input
                       type="text"
@@ -755,6 +764,7 @@ const Content = () => {
                   <div className="basis-1/2 mt-7">
                     <label htmlFor="subject" className=" text-main-gray">
                       Subject
+                      <span className="text-red-400">*</span>
                     </label>
                     <input
                       type="text"
@@ -770,6 +780,7 @@ const Content = () => {
                 <div className="mt-10 px-5">
                   <label htmlFor="message" className=" text-main-gray">
                     Message
+                    <span className="text-red-400">*</span>
                   </label>
                   <textarea
                     name="message"
@@ -779,33 +790,6 @@ const Content = () => {
                   ></textarea>
                 </div>
               </div>
-              {/* <div className="relative basis-full md:basis-1/2 lg:basis-1/2 mt-10">
-                    <label htmlFor="fullName" className="pl-3 text-main-green">
-                      What should we call you?
-                    </label>
-                    <input
-                      type="text"
-                      name="fullName"
-                      id="fullName"
-                      className="block w-full border py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
-                      placeholder="First name"
-                    />
-                  </div>
-                  <div className="relative md:basis-1/2 lg:basis-1/2 mt-10">
-                    <label
-                      htmlFor="email"
-                      className="pl-3 text-main-green text-black"
-                    >
-                      What is your email address?
-                    </label>
-                    <input
-                      type="text"
-                      name="email"
-                      id="email"
-                      className="block w-full border-b py-1.5 pl-3 pr-20 placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
-                      placeholder="Last name"
-                    />
-                  </div> */}
             </div>
           </form>
           <div className="w-full">
