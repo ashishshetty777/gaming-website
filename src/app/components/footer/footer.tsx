@@ -36,7 +36,7 @@ const Footer = () => {
           </Link>
           <div className="lg:text-left md:text-left text-md font-extralight text-white text-center">
             <Image
-              className="sm:basis-full h-22 w-44 m-auto md:float-left mt-10 lg:float-left"
+              className="sm:basis-full h-22 w-44 m-auto md:float-left mt-5 lg:float-left"
               src={GooglePlayBtn}
               alt=""
             ></Image>
@@ -44,66 +44,42 @@ const Footer = () => {
         </div>
         <div className="hidden lg:block md:block lg:ml-20 md:ml-20 ml-0 text-center lg:text-left md:text-left">
           <div className="">
-            <div className="text-lg px-2 font-bold text-white">Menu</div>
+            <div className="text-lg px-2 font-bold text-white">Quick Links</div>
             <Link
-              href="/"
-              target="_blank"
+              href="#about-us"
               className="mt-5 px-2 text-md font-extralight text-white grid"
             >
-              Menu 1
+              About Us
             </Link>
             <Link
-              href="/"
-              target="_blank"
+              href="#contact-us"
               className="mt-2 px-2 text-md font-extralight text-white grid"
             >
-              Menu 2
+              Contact Us
             </Link>
             <Link
-              href="/"
-              target="_blank"
+              href="#team"
               className="mt-2 px-2 text-md font-extralight text-white grid"
             >
-              Menu 3
-            </Link>
-            <Link
-              href="/"
-              target="_blank"
-              className="mt-2 px-2 text-md font-extralight text-white grid"
-            >
-              Menu 4
+              Team
             </Link>
           </div>
         </div>
         <div className=" text-center lg:text-left md:text-left">
-          <div className="text-lg px-2 font-bold text-white">Resources</div>
+          <div className="text-lg px-2 font-bold text-white">Useful Links</div>
           <Link
-            href="/"
+            href="https://www.enoobs.com/privacy-policy/"
             target="_blank"
             className="mt-5 px-2 text-md font-extralight text-white grid"
           >
-            Resource 1
+            Privacy Policy
           </Link>
           <Link
-            href="/"
+            href="https://www.enoobs.com/terms-conditions/"
             target="_blank"
             className="mt-2 px-2 text-md font-extralight text-white grid"
           >
-            Resource 2
-          </Link>
-          <Link
-            href="/"
-            target="_blank"
-            className="mt-2 px-2 text-md font-extralight text-white grid"
-          >
-            Resource 3
-          </Link>
-          <Link
-            href="/"
-            target="_blank"
-            className="mt-2 px-2 text-md font-extralight text-white grid"
-          >
-            Resource 4
+            Terms & Conditions
           </Link>
         </div>
         <div>
@@ -125,34 +101,24 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-center block lg:hidden md:hidden">
-            <div className="text-lg px-2 font-bold text-white">Menu</div>
+            <div className="text-lg px-2 font-bold text-white">Quick Links</div>
             <Link
-              href="/"
-              target="_blank"
+              href="#about-us"
               className="mt-5 px-2 text-md font-extralight text-white grid"
             >
-              Menu 1
+              About Us
             </Link>
             <Link
-              href="/"
-              target="_blank"
+              href="#contact-us"
               className="mt-2 px-2 text-md font-extralight text-white grid"
             >
-              Menu 2
+              Contact Us
             </Link>
             <Link
-              href="/"
-              target="_blank"
+              href="#team"
               className="mt-2 px-2 text-md font-extralight text-white grid"
             >
-              Menu 3
-            </Link>
-            <Link
-              href="/"
-              target="_blank"
-              className="mt-2 px-2 text-md font-extralight text-white grid"
-            >
-              Menu 4
+              Team
             </Link>
           </div>
         </div>
@@ -175,14 +141,14 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full bg-dark-blue relative">
-        <div className="float-left text-base font-extralight w-full text-white lg:w-max md:w-max text-center lg:text-right md:text-right">
-          © 2024 Enoobs
+        <div className="float-left ml-7 text-base font-extralight w-full text-white lg:w-max md:w-max text-center lg:text-right md:text-right">
+          © 2024 Enoobs. All right reserved
         </div>
         <div className="w-full">
           <div className="justify-center w-full pt-4 md:justify-end lg:justify-end lg:absolute md:absolute right-5 -bottom-5 flex">
             <Link href="https://www.youtube.com/@Enoobs-tech" target="_blank">
               <Image
-                className="cursor-pointer w-8 h-8 mr-2"
+                className="cursor-pointer w-8 h-8 mr-4"
                 src={Youtube}
                 alt="Youtube"
               ></Image>
@@ -192,7 +158,7 @@ const Footer = () => {
               target="_blank"
             >
               <Image
-                className="cursor-pointer w-8 h-8 mr-2"
+                className="cursor-pointer w-8 h-8 mr-4"
                 src={Linkedin}
                 alt="linkedin"
               ></Image>
@@ -202,7 +168,7 @@ const Footer = () => {
               target="_blank"
             >
               <Image
-                className="cursor-pointer w-8 h-8 mr-2"
+                className="cursor-pointer w-8 h-8 mr-4"
                 src={X}
                 alt="X"
               ></Image>

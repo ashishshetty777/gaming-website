@@ -50,6 +50,7 @@ const config: Config = {
       },
       height: {
         500: '500px',
+        600: '600px',
         816: '816px',
         450: '450px',
         230: '230px',
