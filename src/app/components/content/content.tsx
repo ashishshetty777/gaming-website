@@ -275,11 +275,11 @@ const Content = () => {
                 Stats Aggregator
               </div>
               <div className="text-base font-poppinsLight text-black">
-                Our stats aggregator compiles gaming statistics and achievements
+                {` Our stats aggregator compiles gaming statistics and achievements
                 from our partner platforms, consolidating them into a single,
                 comprehensive profile linked to the gamer's universal ID. This
                 feature enables gamers to showcase their skills, track their
-                progress, and gain and monetize their recognition.
+                progress, and gain and monetize their recognition.`}
               </div>
             </div>
             <div className="mt-5">
@@ -408,12 +408,12 @@ const Content = () => {
                         Stats Aggregator
                       </div>
                       <div className="text-base mt-2 font-poppinsLight text-black">
-                        Our stats aggregator compiles gaming statistics and
+                        {` Our stats aggregator compiles gaming statistics and
                         achievements from our partner platforms, consolidating
                         them into a single, comprehensive profile linked to the
                         gamer's universal ID. This feature enables gamers to
                         showcase their skills, track their progress, and gain
-                        and monetize their recognition.
+                        and monetize their recognition.`}
                       </div>
                     </div>
                     <div className="w-full">
