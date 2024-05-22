@@ -139,7 +139,7 @@ const Content = () => {
               Gaming ID
             </div>
           </div>
-          <div className="pt-6 text-center font-poppinsLight relative font-extralight">
+          <div className="pt-6 text-white font-poppinsLight relative font-extralight">
             <div className="testimonial-slider">
               <ul className="slider">
                 <li>
@@ -440,7 +440,7 @@ const Content = () => {
               return (
                 <div key={i} className="slide">
                   <div
-                    className={`flex rounded-full mr-3 w-36  text-center py-1 px-2 justify-center text-white`}
+                    className={`flex rounded-full mr-3 w-32  text-center py-1 px-2 justify-center text-white`}
                   >
                     <div className="ml-1 text-base font-poppinsLight font-extralight">
                       {game}
