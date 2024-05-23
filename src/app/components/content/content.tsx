@@ -28,7 +28,6 @@ import Ellipse5 from '../../../../public/assets/Ellipse5.png';
 import Ellipse6 from '../../../../public/assets/Ellipse6.png';
 import Circle from '../../../../public/assets/Circle.png';
 import Faq from '../faqs/faqs';
-import { WobbleCard } from '../ui/wobble-card';
 import { WobbleCardDemo } from '../wobble';
 const Content = () => {
   let games = [
@@ -794,7 +793,7 @@ const Content = () => {
       </section>
       <section
         id="contact-us"
-        className="bg-text-bg md:px-20 lg:px-20 px-10 py-10"
+        className="bg-light-gray md:px-20 lg:px-20 px-10 py-10"
       >
         <div className="flex md:text-left lg:text-left text-center lg:flex-row md:flex-row flex-col ">
           <div className="text-7xl font-bold">

@@ -8,14 +8,14 @@ export function WobbleCardDemo() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-main-green min-h-[500px] lg:min-h-[300px]"
+        containerClassName="col-span-1 lg:col-span-2 h-full one min-h-[500px] lg:min-h-[300px]"
         className=""
       >
         <div className="max-w-xs">
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Comprehensive Gaming Profiles
           </h2>
-          <p className="mt-4 text-left  text-base/6 text-neutral-200">
+          <p className="mt-4 text-left  text-base/6 text-white">
             Enoobs offers comprehensive gaming profiles that combine KYC
             verifiability, a stats aggregator, and detailed gaming achievements.
             These profiles provide gamers with a unified and verified identity
@@ -32,11 +32,11 @@ export function WobbleCardDemo() {
           className="absolute  h-96 w-96 hidden lg:block md:block -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
         /> */}
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 two min-h-[300px]">
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
           Dedicated Social Space for Gamers
         </h2>
-        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-white">
           Enoobs includes a dedicated social space where gamers can host and
           join communities, fostering interaction and engagement. This feature
           supports various social activities, including gaming channels, posts,
@@ -44,12 +44,12 @@ export function WobbleCardDemo() {
           for gamers.
         </p>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-3 three min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="max-w-sm">
           <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             SSO System Designed for Games
           </h2>
-          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-white">
             Enoobs provides a game-specific Single Sign-On (SSO) system
             integrated with partner platforms, allowing gamers to easily onboard
             and access multiple gaming platforms with a single identity. This
@@ -65,11 +65,11 @@ export function WobbleCardDemo() {
           className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
         />
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 four min-h-[300px]">
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
           Cross-Platform Events and Tournaments Management
         </h2>
-        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-white">
           Enoobs facilitates the discovery and management of cross-platform
           events and tournaments, providing gamers with a centralized hub to
           track their participation and achievements. This feature enhances the
@@ -78,14 +78,14 @@ export function WobbleCardDemo() {
         </p>
       </WobbleCard>
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+        containerClassName="col-span-1 lg:col-span-2 h-full five min-h-[500px] lg:min-h-[300px]"
         className=""
       >
         <div className="max-w-xs">
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Detailed Analytics for Gaming Companies
           </h2>
-          <p className="mt-4 text-left  text-base/6 text-neutral-200">
+          <p className="mt-4 text-left  text-base/6 text-white">
             Enoobs provides gaming companies with detailed analytics based on
             the comprehensive data collected on our platform. This valuable
             insight helps companies understand user behavior, engagement

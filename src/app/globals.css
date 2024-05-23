@@ -205,3 +205,23 @@ input:focus {
     opacity: 1;
   }
 }
+
+.one {
+  background-color: #e43d12;
+}
+
+.two {
+  background-color: #080f5b;
+}
+
+.three {
+  background-color: #802bb1;
+}
+
+.four {
+  background-color: #464866;
+}
+
+.five {
+  background-color: #5d001e;
+}
