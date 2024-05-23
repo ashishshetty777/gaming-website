@@ -171,6 +171,62 @@ const Content = () => {
       name: 'Ronin',
       image: Ethereum,
     },
+    {
+      name: 'Ethereum',
+      image: Ethereum,
+    },
+    {
+      name: 'Polygon',
+      image: Polygon,
+    },
+    {
+      name: 'Avalanche',
+      image: Avalanche,
+    },
+    {
+      name: 'Ripple',
+      image: Ripple,
+    },
+    {
+      name: 'Stellar',
+      image: Stellar,
+    },
+    {
+      name: 'Solana',
+      image: Solana,
+    },
+    {
+      name: 'BNB',
+      image: Ethereum,
+    },
+    {
+      name: 'Immutable X',
+      image: Ethereum,
+    },
+    {
+      name: 'Arbitrum',
+      image: Ethereum,
+    },
+    {
+      name: 'Gala Games',
+      image: Ethereum,
+    },
+    {
+      name: 'WAX',
+      image: Ethereum,
+    },
+    {
+      name: 'BEAM',
+      image: Ethereum,
+    },
+    {
+      name: 'Oasys',
+      image: Ethereum,
+    },
+    {
+      name: 'Ronin',
+      image: Ethereum,
+    },
   ];
 
   return (
@@ -260,17 +316,16 @@ const Content = () => {
             <div className="flex slider-track m-auto justify-center justify-items-center">
               {blockChain.map((single, i) => {
                 return (
-                  <div
-                    key={i}
-                    className="mt-2 lg:mt-0 md:mt-0 slide flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border"
-                  >
-                    <Image
-                      alt={single.name}
-                      className="mt-1 h-4 w-4"
-                      src={single.image}
-                    />
-                    <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
-                      {single.name}
+                  <div key={i} className="slide">
+                    <div className="mt-2 lg:mt-0 md:mt-0  flex rounded-full mr-3 w-44 h-10 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
+                      <Image
+                        alt={single.name}
+                        className="mt-1 h-4 w-4"
+                        src={single.image}
+                      />
+                      <div className=" text-center ml-1 text-base font-poppinsLight font-semibold text-black">
+                        {single.name}
+                      </div>
                     </div>
                   </div>
                 );
