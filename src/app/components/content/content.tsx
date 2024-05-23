@@ -28,7 +28,6 @@ import Ellipse5 from '../../../../public/assets/Ellipse5.png';
 import Ellipse6 from '../../../../public/assets/Ellipse6.png';
 import Circle from '../../../../public/assets/Circle.png';
 import Faq from '../faqs/faqs';
-import { WobbleCard } from '../ui/wobble-card';
 import { WobbleCardDemo } from '../wobble';
 const Content = () => {
   let games = [
@@ -114,6 +113,121 @@ const Content = () => {
     'Splinterlands',
   ];
 
+  let blockChain = [
+    {
+      name: 'Ethereum',
+      image: Ethereum,
+    },
+    {
+      name: 'Polygon',
+      image: Polygon,
+    },
+    {
+      name: 'Avalanche',
+      image: Avalanche,
+    },
+    {
+      name: 'Ripple',
+      image: Ripple,
+    },
+    {
+      name: 'Stellar',
+      image: Stellar,
+    },
+    {
+      name: 'Solana',
+      image: Solana,
+    },
+    {
+      name: 'BNB',
+      image: Ethereum,
+    },
+    {
+      name: 'Immutable X',
+      image: Ethereum,
+    },
+    {
+      name: 'Arbitrum',
+      image: Ethereum,
+    },
+    {
+      name: 'Gala Games',
+      image: Ethereum,
+    },
+    {
+      name: 'WAX',
+      image: Ethereum,
+    },
+    {
+      name: 'BEAM',
+      image: Ethereum,
+    },
+    {
+      name: 'Oasys',
+      image: Ethereum,
+    },
+    {
+      name: 'Ronin',
+      image: Ethereum,
+    },
+    {
+      name: 'Ethereum',
+      image: Ethereum,
+    },
+    {
+      name: 'Polygon',
+      image: Polygon,
+    },
+    {
+      name: 'Avalanche',
+      image: Avalanche,
+    },
+    {
+      name: 'Ripple',
+      image: Ripple,
+    },
+    {
+      name: 'Stellar',
+      image: Stellar,
+    },
+    {
+      name: 'Solana',
+      image: Solana,
+    },
+    {
+      name: 'BNB',
+      image: Ethereum,
+    },
+    {
+      name: 'Immutable X',
+      image: Ethereum,
+    },
+    {
+      name: 'Arbitrum',
+      image: Ethereum,
+    },
+    {
+      name: 'Gala Games',
+      image: Ethereum,
+    },
+    {
+      name: 'WAX',
+      image: Ethereum,
+    },
+    {
+      name: 'BEAM',
+      image: Ethereum,
+    },
+    {
+      name: 'Oasys',
+      image: Ethereum,
+    },
+    {
+      name: 'Ronin',
+      image: Ethereum,
+    },
+  ];
+
   return (
     <>
       <div className="bg-black lg:bg-unset md:bg-unset">
@@ -197,46 +311,24 @@ const Content = () => {
           </div>
         </div>
         <div className="w-full pt-5 px-0 lg:px-32 md:px-10">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 m-auto justify-center justify-items-center">
-            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image alt="Ethereum" className="mt-1 h-4 w-4" src={Ethereum} />
-              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
-                Ethereum
-              </div>
-            </div>
-            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image alt="Polygon" className="mt-1 h-4 w-4" src={Polygon} />
-              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
-                Polygon
-              </div>
-            </div>
-            <div className="mt-2 lg:mt-0 md:mt-0 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image
-                alt="Avalanche"
-                className="mt-1  h-4 w-4"
-                src={Avalanche}
-              />
-              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
-                Avalanche
-              </div>
-            </div>
-            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image alt="Ripple" className="mt-1  h-4 w-4" src={Ripple} />
-              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
-                Ripple
-              </div>
-            </div>
-            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image alt="Stellar" className="mt-1  h-4 w-4" src={Stellar} />
-              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
-                Stellar
-              </div>
-            </div>
-            <div className="mt-2 lg:mt-0 md:mt-2 flex rounded-full mr-3 w-36 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
-              <Image alt="Solana" className="mt-1  h-4 w-4" src={Solana} />
-              <div className="w-20 text-center ml-1 text-base font-poppinsLight font-semibold text-black">
-                Solana
-              </div>
+          <div className="w-full slider overflow-hidden">
+            <div className="flex slider-track m-auto justify-center justify-items-center">
+              {blockChain.map((single, i) => {
+                return (
+                  <div key={i} className="slide">
+                    <div className="mt-2 lg:mt-0 md:mt-0  flex rounded-full mr-3 w-44 h-10 text-center py-1.5 px-2 justify-center bg-pill-bg-green border border-pill-border">
+                      <Image
+                        alt={single.name}
+                        className="mt-1 h-4 w-4"
+                        src={single.image}
+                      />
+                      <div className=" text-center ml-1 text-base font-poppinsLight font-semibold text-black">
+                        {single.name}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -440,7 +532,7 @@ const Content = () => {
               return (
                 <div key={i} className="slide">
                   <div
-                    className={`flex rounded-full mr-3 w-32  text-center py-1 px-2 justify-center text-white`}
+                    className={`flex rounded-full mr-3 w-36  text-center py-1 px-2 justify-center text-white`}
                   >
                     <div className="ml-1 text-base font-poppinsLight font-extralight">
                       {game}
@@ -701,7 +793,7 @@ const Content = () => {
       </section>
       <section
         id="contact-us"
-        className="bg-text-bg md:px-20 lg:px-20 px-10 py-10"
+        className="bg-light-gray md:px-20 lg:px-20 px-10 py-10"
       >
         <div className="flex md:text-left lg:text-left text-center lg:flex-row md:flex-row flex-col ">
           <div className="text-7xl font-bold">

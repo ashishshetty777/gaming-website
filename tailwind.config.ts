@@ -35,6 +35,7 @@ const config: Config = {
         'pill-border': '#06A38B',
         'dark-blue': '#050D24',
         'text-bg': '#E6F5F3',
+        'light-gray': '#f5f5f5',
       },
       backgroundColor: {
         unset: 'unset',
