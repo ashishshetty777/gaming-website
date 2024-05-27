@@ -2,13 +2,13 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../../../../public/assets/Header_logo.png';
+import Logo from '../../../../public/assets/enoobs_logo2.png';
 const Header = () => {
   const [showSidePanel, setShowSidePanel] = useState(false);
   return (
-    <header className="md:absolute lg:absolute relative top-0 w-full md:px-20 lg:px-20 px-10 py-5 flex bg-black lg:bg-unset md:bg-unset lg:bg-none md:bg-none justify-between font-inter">
+    <header className="z-10 md:absolute lg:absolute relative top-0 w-full md:px-20 lg:px-20 px-10 py-5 flex bg-black lg:bg-unset md:bg-unset lg:bg-none md:bg-none justify-between font-inter">
       <nav
-        className=" flex w-full items-center justify-between   py-1"
+        className=" flex w-full items-center justify-between py-1"
         aria-label="Global"
       >
         <div className="">
@@ -18,20 +18,20 @@ const Header = () => {
         </div>
         <div className="lg:flex md:flex hidden justify-end w-full">
           <div className="flex float-left">
-            <div className="cursor-pointer m-auto text-white p-3 font-light text-sm">
-              Home
+            <div className=" m-auto text-white p-3 font-light text-sm">
+              <Link href="/">Home</Link>
             </div>
-            <div className="cursor-pointer m-auto text-white p-3 font-light text-sm">
-              About
+            <div className=" m-auto text-white p-3 font-light text-sm">
+              <Link href="/">About</Link>
             </div>
-            <div className="cursor-pointer m-auto text-white p-3 font-light text-sm">
-              Blog
+            <div className=" m-auto text-white p-3 font-light text-sm">
+              <Link href="/">Blog</Link>
             </div>
-            <div className="cursor-pointer m-auto text-white p-3 font-light text-sm">
-              About Us
+            <div className=" m-auto text-white p-3 font-light text-sm">
+              <Link href="#about-us">About Us</Link>
             </div>
-            <div className="cursor-pointer m-auto text-white p-3 font-light text-sm">
-              Contact
+            <div className=" m-auto text-white p-3 font-light text-sm">
+              <Link href="#contact-us">Contact</Link>
             </div>
             <div className="ml-4 text-white cursor-pointer text-sm py-3.5 px-6 rounded-full h-12 bg-main-green">{`Download`}</div>
           </div>
@@ -110,9 +110,9 @@ const Header = () => {
                         <Link
                           target="_blank"
                           className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-black hover:bg-gray-50"
-                          href="/"
+                          href="#about-us"
                         >
-                          About
+                          About Us
                         </Link>
                         <Link
                           target="_blank"
@@ -124,7 +124,7 @@ const Header = () => {
                         <Link
                           target="_blank"
                           className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-black hover:bg-gray-50"
-                          href="/"
+                          href="#contact-us"
                         >
                           Contact
                         </Link>

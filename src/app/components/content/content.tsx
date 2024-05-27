@@ -8,7 +8,16 @@ import Ripple from '../../../../public/assets/Ripple.png';
 import Solana from '../../../../public/assets/Solana.png';
 import Stellar from '../../../../public/assets/Stellar.png';
 import Avalanche from '../../../../public/assets/Avalanche.png';
+import BNB from '../../../../public/assets/bnb.png';
+import Beam from '../../../../public/assets/beam.png';
+import Gala from '../../../../public/assets/gala.png';
+import Immutable from '../../../../public/assets/imuut.png';
+import Oasys from '../../../../public/assets/Oasys.png';
+import Wax from '../../../../public/assets/wax.png';
+import Arbitrum from '../../../../public/assets/Arbitrum.png';
+import Ronin from '../../../../public/assets/ronin.png';
 import Mobile from '../../../../public/assets/get_the_best.png';
+import Phone from '../../../../public/assets/phone.gif';
 import Team1 from '../../../../public/assets/anish-min.jpg';
 import Team2 from '../../../../public/assets/ved-min.jpg';
 import Team3 from '../../../../public/assets/Gagan-min.jpg';
@@ -140,35 +149,35 @@ const Content = () => {
     },
     {
       name: 'BNB',
-      image: Ethereum,
+      image: BNB,
     },
     {
       name: 'Immutable X',
-      image: Ethereum,
+      image: Immutable,
     },
     {
       name: 'Arbitrum',
-      image: Ethereum,
+      image: Arbitrum,
     },
     {
       name: 'Gala Games',
-      image: Ethereum,
+      image: Gala,
     },
     {
       name: 'WAX',
-      image: Ethereum,
+      image: Wax,
     },
     {
       name: 'BEAM',
-      image: Ethereum,
+      image: Beam,
     },
     {
       name: 'Oasys',
-      image: Ethereum,
+      image: Oasys,
     },
     {
       name: 'Ronin',
-      image: Ethereum,
+      image: Ronin,
     },
     {
       name: 'Ethereum',
@@ -196,35 +205,35 @@ const Content = () => {
     },
     {
       name: 'BNB',
-      image: Ethereum,
+      image: BNB,
     },
     {
       name: 'Immutable X',
-      image: Ethereum,
+      image: Immutable,
     },
     {
       name: 'Arbitrum',
-      image: Ethereum,
+      image: Arbitrum,
     },
     {
       name: 'Gala Games',
-      image: Ethereum,
+      image: Gala,
     },
     {
       name: 'WAX',
-      image: Ethereum,
+      image: Wax,
     },
     {
       name: 'BEAM',
-      image: Ethereum,
+      image: Beam,
     },
     {
       name: 'Oasys',
-      image: Ethereum,
+      image: Oasys,
     },
     {
       name: 'Ronin',
-      image: Ethereum,
+      image: Ronin,
     },
   ];
 
@@ -454,8 +463,8 @@ const Content = () => {
             </div>
             <div>
               <Image
-                className="h-400 w-64 m-auto mt-20"
-                src={Mobile}
+                className="h-400 w-64 m-auto mt-20 rounded-3xl border-8 border-black"
+                src={Phone}
                 alt="mobile"
               />
             </div>
@@ -601,7 +610,25 @@ const Content = () => {
           </div>
         </div> */}
       </section>
-      <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
+      <section id="about-us" className="bg-white md:px-20 lg:px-20 px-10 py-10">
+        <div className="pt-10 mt-0 text-center text-4xl">
+          <div className="font-poppins text-black"> About Us</div>
+          <div className="md:px-32 lg:px-32 px-5 pt-5 text-base font-poppinsLight text-main-gray">
+            {`Enoobs is a revolutionary gaming platform that offers universal
+            digital ID to gamers using which they can aggregate their gaming
+            stats and assets from across independent gaming platforms and share
+            their achievements with the world on social media. `}
+          </div>
+          <div className="md:px-32 lg:px-32 px-5 pt-5 text-base font-poppinsLight text-main-gray">
+            {`The fragmentation of gamers' data across platforms and the inability to track and
+            manage gaming assets are costing gamers the opportunity to showcase
+            and monetize their gaming skills. To empower gamers by providing
+            them the opportunities to showcase and monetize their gaming skills,
+            we are building Enoobs.`}
+          </div>
+        </div>
+      </section>
+      {/* <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
         <div className="pt-10 mt-0 text-center text-4xl">
           <div className="font-poppins text-black"> Roadmap</div>
           <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 mt-10 justify-center">
@@ -690,9 +717,9 @@ const Content = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
-        <div id="team" className="pt-10 text-center text-4xl">
+        <div id="team" className="text-center text-4xl">
           <div className="font-poppins text-black">Meet the team</div>
           <div className="pt-5 text-base font-poppinsLight text-main-gray">
             It is a long established fact that a reader will be distracted{' '}
