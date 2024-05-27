@@ -463,7 +463,7 @@ const Content = () => {
             </div>
             <div>
               <Image
-                className="h-400 w-64 m-auto mt-20 rounded-3xl border-4 border-black"
+                className="h-400 w-64 m-auto mt-20 rounded-3xl border-8 border-black"
                 src={Phone}
                 alt="mobile"
               />
