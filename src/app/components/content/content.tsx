@@ -610,7 +610,7 @@ const Content = () => {
           </div>
         </div> */}
       </section>
-      <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
+      <section id="about-us" className="bg-white md:px-20 lg:px-20 px-10 py-10">
         <div className="pt-10 mt-0 text-center text-4xl">
           <div className="font-poppins text-black"> About Us</div>
           <div className="md:px-32 lg:px-32 px-5 pt-5 text-base font-poppinsLight text-main-gray">
