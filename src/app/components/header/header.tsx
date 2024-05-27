@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../../../../public/assets/Header_logo.png';
+import Logo from '../../../../public/assets/enoobs_logo2.png';
 const Header = () => {
   const [showSidePanel, setShowSidePanel] = useState(false);
   return (

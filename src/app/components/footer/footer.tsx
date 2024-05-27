@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Logo from '../../../../public/assets/Header_logo.png';
+import Logo from '../../../../public/assets/enoobs_logo.png';
 import GooglePlayBtn from '../../../../public/assets/get_it_on.png';
 import Youtube from '../../../../public/assets/Youtube-green.png';
 import Linkedin from '../../../../public/assets/Linkedin-green.png';
