@@ -11,7 +11,7 @@ export function WobbleCardDemo() {
   return (
     <div className="flex flex-col max-w-7xl mx-auto w-full">
       <div className="flex lg:flex-row md:flex-col flex-col">
-        <WobbleCard containerClassName="lg:mr-4 md:mr-0 mb-4 md:mb-4 lg:mb-0  mr-0 basis-3/5   one">
+        <WobbleCard containerClassName="lg:mr-4 md:mr-0 mb-4 md:mb-4 lg:mb-0  mr-0 basis-3/5 one">
           <div className="">
             <div className="flex lg:flex-row md:flex-row flex-col">
               <div className="basis-1/2">
@@ -36,7 +36,7 @@ export function WobbleCardDemo() {
             </div>
           </div>
         </WobbleCard>
-        <WobbleCard containerClassName=" basis-2/5 two ">
+        <WobbleCard containerClassName=" basis-2/5 one ">
           <h2 className="max-w-80  text-left text-balance text-base md:text-3xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Dedicated Social Space for Gamers
           </h2>
@@ -49,7 +49,7 @@ export function WobbleCardDemo() {
           </p>
         </WobbleCard>
       </div>
-      <WobbleCard containerClassName="my-4  three">
+      <WobbleCard containerClassName="my-4  one">
         <div>
           <div className="flex lg:flex-row md:flex-row flex-col">
             <div className="basis-1/2">
@@ -75,7 +75,7 @@ export function WobbleCardDemo() {
         </div>
       </WobbleCard>
       <div className="flex lg:flex-row md:flex-col flex-col">
-        <WobbleCard containerClassName="h-inherit basis-2/5 four">
+        <WobbleCard containerClassName="h-inherit basis-2/5 one">
           <h2 className="max-w-80  text-left text-balance text-base md:text-3xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Cross-Platform Events and Tournaments Management
           </h2>
@@ -88,7 +88,7 @@ export function WobbleCardDemo() {
           </p>
         </WobbleCard>
         <WobbleCard
-          containerClassName="basis-3/5  lg:ml-4 md:ml-0 mt-4 md:mt-4 lg:mt-0 ml-0 h-full five"
+          containerClassName="basis-3/5  lg:ml-4 md:ml-0 mt-4 md:mt-4 lg:mt-0 ml-0 h-full one"
           className=""
         >
           <div className="flex lg:flex-row md:flex-row flex-col">

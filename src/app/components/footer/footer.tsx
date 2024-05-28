@@ -123,8 +123,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-3/5 m-auto block lg:hidden md:hidden">
-        <div className="text-lg px-2 font-bold text-white">
+      <div className="w-4/5 m-auto block lg:hidden md:hidden">
+        <div className="text-lg text-center px-2 font-bold text-white">
           Join our mailing list and hear about new features
         </div>
         <div className="relative mt-4 ml-2 rounded-md shadow-sm">
@@ -141,39 +141,39 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full bg-dark-blue relative">
-        <div className="float-left ml-7 text-base font-extralight w-full text-white lg:w-max md:w-max text-center lg:text-right md:text-right">
-          © 2024 Enoobs. All right reserved
-        </div>
-        <div className="w-full">
-          <div className="justify-center w-full pt-4 md:justify-end lg:justify-end lg:absolute md:absolute right-5 -bottom-5 flex">
-            <Link href="https://www.youtube.com/@Enoobs-tech" target="_blank">
-              <Image
-                className="cursor-pointer w-8 h-8 mr-4"
-                src={Youtube}
-                alt="Youtube"
-              ></Image>
-            </Link>
-            <Link
-              href="https://www.linkedin.com/company/enoobs/"
-              target="_blank"
-            >
-              <Image
-                className="cursor-pointer w-8 h-8 mr-4"
-                src={Linkedin}
-                alt="linkedin"
-              ></Image>
-            </Link>
-            <Link
-              href="https://twitter.com/i/flow/login?redirect_after_login=%2FEnoobs_India"
-              target="_blank"
-            >
-              <Image
-                className="cursor-pointer w-8 h-8 mr-4"
-                src={X}
-                alt="X"
-              ></Image>
-            </Link>
+        <div className="float-left ml-0 lg:ml-7 md:ml-7 text-base font-extralight w-full text-white lg:w-max md:w-max text-center lg:text-right md:text-right">
+          <div className="w-full">
+            <div className="justify-center w-full pt-4 md:justify-end lg:justify-end lg:absolute md:absolute right-5 -bottom-5 flex">
+              <Link href="https://www.youtube.com/@Enoobs-tech" target="_blank">
+                <Image
+                  className="cursor-pointer w-8 h-8 mr-4"
+                  src={Youtube}
+                  alt="Youtube"
+                ></Image>
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/enoobs/"
+                target="_blank"
+              >
+                <Image
+                  className="cursor-pointer w-8 h-8 mr-4"
+                  src={Linkedin}
+                  alt="linkedin"
+                ></Image>
+              </Link>
+              <Link
+                href="https://twitter.com/i/flow/login?redirect_after_login=%2FEnoobs_India"
+                target="_blank"
+              >
+                <Image
+                  className="cursor-pointer w-8 h-8 mr-4"
+                  src={X}
+                  alt="X"
+                ></Image>
+              </Link>
+            </div>
           </div>
+          © 2024 Enoobs. All right reserved
         </div>
       </div>
     </div>
