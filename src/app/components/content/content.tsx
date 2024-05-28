@@ -241,7 +241,7 @@ const Content = () => {
 
   return (
     <>
-      <div className="bg-black lg:bg-unset md:bg-unset">
+      <div className="bg-black lg:bg-unset md:bg-unset relative">
         <video
           className="bg-vid hidden lg:block md:block w-full object-center z-minus"
           poster={'assets/Hero.png'}
@@ -504,7 +504,7 @@ const Content = () => {
                           </div>
                         </div>
                         <Image
-                          className="w-30 h-30 mt-48"
+                          className="w-30 hidden h-30 mt-48"
                           src={Ellipse5}
                           alt="Ellipse5"
                         />
@@ -822,7 +822,7 @@ const Content = () => {
               Frequently asked questions
             </div>
             <div className="mt-6 font-medium text-main-gray text-center lg:text-left md:text-center mb-10 md:mb-10 lg:mb-0">
-              Explore common queries about <br></br> Enoobs and its benefits
+              Explore common queries about Enoobs and its benefits
             </div>
             <Image
               src={FaqImage}

@@ -9,7 +9,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <div className=" px-7 pt-20 pb-20 lg:pb-7 md:pb-7 bg-dark-blue z-50 relative">
-      <div className="block lg:hidden md:hidden">
+      <div className="block  lg:hidden md:hidden">
         <Link href="/" className="-m-1.5 p-1.5">
           <Image
             className="sm:basis-full h-22 w-44 m-auto md:float-left lg:float-left"
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 p-6 lg:px-8 md:px-8">
-        <div className="hidden lg:block md:block">
+        <div className="hidden lg:flex lg:flex-col md:flex md:flex-col">
           <Link href="/" className="-m-1.5 p-1.5">
             <Image
               className="sm:basis-full h-22 w-44 m-auto md:float-left lg:float-left"
