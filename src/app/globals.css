@@ -71,8 +71,8 @@ input:focus {
   padding: 0;
   position: relative;
   display: inline-block;
-  width: 100%;
-  height: 80px;
+  /* width: 100%; */
+  height: 105px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -207,7 +207,7 @@ input:focus {
 }
 
 .one {
-  background-color: #ee5353;
+  background-color: #313c40;
 }
 
 .two {

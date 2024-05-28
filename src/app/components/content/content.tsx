@@ -37,7 +37,9 @@ import Ellipse5 from '../../../../public/assets/Ellipse5.png';
 import Ellipse6 from '../../../../public/assets/Ellipse6.png';
 import Circle from '../../../../public/assets/Circle.png';
 import Faq from '../faqs/faqs';
+import FaqImage from '../../../../public/assets/faq.jpg';
 import { WobbleCardDemo } from '../wobble';
+import { ArrowRight } from 'lucide-react';
 const Content = () => {
   let games = [
     'Pegaxy',
@@ -254,7 +256,7 @@ const Content = () => {
           />
         </video>
         <section className="md:absolute lg:absolute relative left-0 right-0 lg:top-24 md:top-24 md:px-20 lg:px-20 px-10 py-10">
-          <div className="py-5 md:px-10 lg:px-10 px-1 text-white text-center">
+          <div className="py-5 md:px-0 lg:px-0 px-1 text-white text-left">
             <div className="lg:text-7.5xl md:text-6xl text-4xl lg:leading-78 md:leading-60  tracking-normal font-bold">
               Create <br></br>
               Your <span className="text-main-green">Universal</span>
@@ -262,38 +264,37 @@ const Content = () => {
               Gaming ID
             </div>
           </div>
-          <div className="pt-6 text-white font-poppinsLight relative font-extralight">
+          <div className=" text-white font-poppinsLight relative font-extralight">
             <div className="testimonial-slider">
-              <ul className="slider">
+              <ul className="md:w-2/4 lg:w-2/4 m-auto  w-full slider">
                 <li>
                   <div className="testimonial-slider-content">
-                    <p className=" font-poppinsLight text-lg text-center">
+                    <p className=" font-poppinsLight text-lg text-left">
                       You deserve recognition and rewards for the time,
-                      attention, <br></br>and accomplishments you put into
-                      gaming across a variety of games.
+                      attention and accomplishments you put into gaming across a
+                      variety of games.
                     </p>
                   </div>
                 </li>
                 <li>
-                  <p className=" font-poppinsLight text-lg text-center">
-                    We believe that your gaming history and achievements
-                    <br></br> are incredibly valuable
+                  <p className=" font-poppinsLight text-lg text-left">
+                    We believe that your gaming history and achievements are
+                    incredibly valuable.
                   </p>
                 </li>
                 <li>
                   <div className="testimonial-slider-content">
-                    <p className="font-poppinsLight text-lg text-center">
+                    <p className="font-poppinsLight text-lg text-left">
                       Single profile that brings together every aspect of your
-                      gaming life,<br></br> and truly recognizes who you are as
-                      a gamer
+                      gaming life and truly recognizes who you are as a gamer.
                     </p>
                   </div>
                 </li>
                 <li>
                   <div className="testimonial-slider-content">
-                    <p className=" font-poppinsLight text-lg text-center">
-                      We believe that your gaming history and achievements
-                      <br></br> are incredibly valuable
+                    <p className=" font-poppinsLight text-lg text-left">
+                      We believe that your gaming history and achievements are
+                      incredibly valuable.
                     </p>
                   </div>
                 </li>
@@ -301,11 +302,17 @@ const Content = () => {
             </div>
           </div>
           <div className="w-full">
-            <Image
-              className="m-auto h-12 w-36 cursor-pointer"
-              src={GooglePlayBtn}
-              alt="Google-play"
-            />
+            <div className="flex mt-2">
+              <Image
+                className="h-12 w-36 cursor-pointer"
+                src={GooglePlayBtn}
+                alt="Google-play"
+              />
+              <div className="text-main-green font-bold text-xl cursor-pointer p-2 ml-5 mt-0 flex">
+                Join us now
+                <ArrowRight className="ml-2 mt-1" />
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -314,9 +321,9 @@ const Content = () => {
           <div className="font-poppins text-black">
             Get the best of your blockchains
           </div>
-          <div className="py-3 text-base font-poppinsLight text-main-gray">
-            It is a long established fact that a reader will <br></br> be
-            distracted by the readable content of a page.
+          <div className="py-3 text-base font-poppinsLight text-balance text-main-gray">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page.
           </div>
         </div>
         <div className="w-full pt-5 px-0 lg:px-32 md:px-10">
@@ -341,12 +348,12 @@ const Content = () => {
             </div>
           </div>
         </div>
-        <div className="pt-10 text-left lg:text-center md:text-center text-4xl font-poppins text-black">
+        {/* <div className="pt-10 text-left lg:text-center md:text-center text-4xl font-poppins text-black">
           Why Enoobs?
-        </div>
-        <div className="block lg:hidden md:hidden relative">
+        </div> */}
+        <div className="block  lg:hidden md:hidden relative">
           <div className="ml-0 mr-0 flex flex-col">
-            <div className="mt-5">
+            <div className="mt-10">
               <div className="text-xl text-black font-bold">
                 Universal Gaming ID
               </div>
@@ -398,10 +405,10 @@ const Content = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 hidden lg:block md:block relative">
+        <div className="mt-5 hidden lg:block md:block relative">
           {/* <Image className="w-3/5 h-3/5 m-auto" src={Circle} alt="circle-bg" /> */}
           <div className="ml-0 mr-0 gap-0 grid grid-cols-midsection">
-            <div className="relative md:px-1 lg:px-8">
+            <div className="relative mt-28 md:px-1 lg:px-8">
               <div className="flex flex-col">
                 <div className="relative">
                   <div className="flex flex-col">
@@ -462,13 +469,16 @@ const Content = () => {
               </div>
             </div>
             <div>
+              <div className="pt-10 mt-20 text-left lg:text-center md:text-center text-4xl font-poppins text-black">
+                Why Enoobs?
+              </div>
               <Image
-                className="h-400 w-64 m-auto mt-20 rounded-3xl border-8 border-black"
+                className="h-500 w-64 m-auto mt-16 rounded-3xl border-8 border-black"
                 src={Phone}
                 alt="mobile"
               />
             </div>
-            <div className="relative md:px-1 lg:px-8">
+            <div className="relative mt-28 md:px-1 lg:px-8">
               <div className="flex flex-col">
                 <div className="relative">
                   <div className="flex flex-col">
@@ -519,7 +529,7 @@ const Content = () => {
                     </div>
                     <div className="w-full">
                       <Image
-                        className="w-30 h-30 mr-0 float-right"
+                        className="w-24 h-24 mr-10 float-right"
                         src={Ellipse6}
                         alt="Ellipse6"
                       />
@@ -613,13 +623,13 @@ const Content = () => {
       <section id="about-us" className="bg-white md:px-20 lg:px-20 px-10 py-10">
         <div className="pt-10 mt-0 text-center text-4xl">
           <div className="font-poppins text-black"> About Us</div>
-          <div className="md:px-32 lg:px-32 px-5 pt-5 text-base font-poppinsLight text-main-gray">
+          <div className="md:px-32 text-balance lg:px-32 px-5 pt-5 text-base font-poppinsLight text-main-gray">
             {`Enoobs is a revolutionary gaming platform that offers universal
             digital ID to gamers using which they can aggregate their gaming
             stats and assets from across independent gaming platforms and share
             their achievements with the world on social media. `}
           </div>
-          <div className="md:px-32 lg:px-32 px-5 pt-5 text-base font-poppinsLight text-main-gray">
+          <div className="md:px-32 text-balance lg:px-32 px-5 pt-5 text-base font-poppinsLight text-main-gray">
             {`The fragmentation of gamers' data across platforms and the inability to track and
             manage gaming assets are costing gamers the opportunity to showcase
             and monetize their gaming skills. To empower gamers by providing
@@ -718,7 +728,7 @@ const Content = () => {
           </div>
         </div>
       </section> */}
-      <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
+      {/* <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
         <div id="team" className="text-center text-4xl">
           <div className="font-poppins text-black">Meet the team</div>
           <div className="pt-5 text-base font-poppinsLight text-main-gray">
@@ -739,11 +749,11 @@ const Content = () => {
               <div className="text-md my-2 font-light text-white">
                 Product Owner NexBloc, Securvaults, Iotric
               </div>
-              {/* <div className="flex mt-4">
+              <div className="flex mt-4">
                 <Image className="mr-4" src={Fb} alt="facebook"></Image>
                 <Image className="mr-4" src={Instagram} alt="Instagram"></Image>
                 <Image className="" src={Twitter} alt="Twitter"></Image>
-              </div> */}
+              </div>
             </div>
           </div>
           <div className="w-fit mt-10 md:mt-0 lg:mt-0 mx-auto">
@@ -758,11 +768,11 @@ const Content = () => {
               <div className="text-md my-2 font-light text-white">
                 Serial Entrepenuer Iotric, NexBloc, MyIDFI
               </div>
-              {/* <div className="flex  mt-4">
+              <div className="flex  mt-4">
                 <Image className="mr-4" src={Fb} alt="facebook"></Image>
                 <Image className="mr-4" src={Instagram} alt="Instagram"></Image>
                 <Image className="" src={Twitter} alt="Twitter"></Image>
-              </div> */}
+              </div>
             </div>
           </div>
           <div className="w-fit mt-10 md:mt-10 lg:mt-0 mx-auto">
@@ -777,11 +787,11 @@ const Content = () => {
               <div className="text-md my-2 font-light text-white">
                 Team Lead Izzyhomes, ThirdEye, FriendsChat
               </div>
-              {/* <div className="flex mt-4">
+              <div className="flex mt-4">
                 <Image className="mr-4" src={Fb} alt="facebook"></Image>
                 <Image className="mr-4" src={Instagram} alt="Instagram"></Image>
                 <Image className="" src={Twitter} alt="Twitter"></Image>
-              </div> */}
+              </div>
             </div>
           </div>
           <div className="w-fit mt-10 md:mt-10 lg:mt-0 mx-auto">
@@ -796,49 +806,54 @@ const Content = () => {
               <div className="text-md my-2 font-light text-white">
                 Technical Architect Croplife, Hindxr, Kardiogenics
               </div>
-              {/* <div className="flex mt-4">
+              <div className="flex mt-4">
                 <Image className="mr-4" src={Fb} alt="facebook"></Image>
                 <Image className="mr-4" src={Instagram} alt="Instagram"></Image>
                 <Image className="" src={Twitter} alt="Twitter"></Image>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
         <div className=" grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1">
           <div>
-            <div className="text-5xl font-bold text-black">
+            <div className="text-5xl font-bold text-black text-center lg:text-left md:text-center">
               Frequently asked questions
             </div>
-            <div className="mt-6 font-medium text-main-gray  mb-10 md:mb-10 lg:mb-0">
+            <div className="mt-6 font-medium text-main-gray text-center lg:text-left md:text-center mb-10 md:mb-10 lg:mb-0">
               Explore common queries about <br></br> Enoobs and its benefits
             </div>
+            <Image
+              src={FaqImage}
+              className="h-400 w-300 md:w-400 lg:w-400 mt-2"
+              alt="faq"
+            />
           </div>
           <Faq />
         </div>
       </section>
       <section
         id="contact-us"
-        className="bg-light-gray md:px-20 lg:px-20 px-10 py-10"
+        className="bg-white md:px-20 lg:px-20 px-10 py-10"
       >
-        <div className="flex md:text-left lg:text-left text-center lg:flex-row md:flex-row flex-col ">
+        <div className="flex text-left lg:flex-row md:flex-row flex-col ">
           <div className="text-7xl font-bold">
             <span className="text-black"> Say </span>
             <span className="text-main-green"> hello. </span>
           </div>
-          <div className="ml-4 mt-8 md:mt-1 lg:mt-1 text-base font-poppinsLight font-medium text-main-gray">
+          <div className="md:ml-4 lg:ml-4 sm:ml-0 mt-8 md:mt-1 lg:mt-1 text-base font-poppinsLight font-medium text-main-gray">
             Feel free to drop us an email anytime.<br></br> We’d love to hear
             from you.
           </div>
         </div>
-        <div className="mt-12 flex flex-col ">
+        <div className="lg:mt-12 md:mt-12 mt-0 flex flex-col ">
           <form>
             <div className="flex flex-col md:flex-row lg:flex-row">
               <div className="relative mt-10 basis-2/6">
-                <div className="flex flex-col px-5">
+                <div className="flex flex-col pr-5">
                   <div className="basis-1/2">
-                    <label htmlFor="name" className=" text-main-gray">
+                    <label htmlFor="name" className=" text-gray-800">
                       What should we call you?
                       <span className="text-red-400">*</span>
                     </label>
@@ -846,7 +861,7 @@ const Content = () => {
                       type="text"
                       name="name"
                       id="name"
-                      className="block w-full mt-2 border py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
+                      className="block w-full mt-2 border-2 border-transparent shadow-input py-3 pl-3 rounded placeholder:text-gray-500 text-gray-500 sm:text-sm sm:leading-6"
                       placeholder="Enter your name"
                     />
                   </div>
@@ -859,14 +874,14 @@ const Content = () => {
                       type="text"
                       name="phone"
                       id="phone"
-                      className="block w-full mt-2 border py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
+                      className="block w-full mt-2 border-2 border-transparent shadow-input py-3 pl-3 rounded placeholder:text-gray-500 text-gray-500 sm:text-sm sm:leading-6"
                       placeholder=""
                     />
                   </div>
                 </div>
               </div>
               <div className="relative mt-10 basis-2/6">
-                <div className="flex flex-col px-5">
+                <div className="flex flex-col pr-5">
                   <div className="basis-1/2">
                     <label htmlFor="email" className=" text-main-gray">
                       What is your email id?
@@ -876,7 +891,7 @@ const Content = () => {
                       type="text"
                       name="email"
                       id="email"
-                      className="block w-full mt-2 border py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
+                      className="block w-full mt-2 border-2 border-transparent shadow-input py-3 pl-3 rounded placeholder:text-gray-500 text-gray-500 sm:text-sm sm:leading-6"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -889,14 +904,14 @@ const Content = () => {
                       type="text"
                       name="subject"
                       id="subject"
-                      className="block w-full border mt-2 py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
+                      className="block w-full border-2 border-transparent shadow-input mt-2 py-3 pl-3 rounded placeholder:text-gray-500 text-gray-500 sm:text-sm sm:leading-6"
                       placeholder="Your subject"
                     />
                   </div>
                 </div>
               </div>
               <div className="basis-2/6">
-                <div className="mt-10 px-5">
+                <div className="mt-10">
                   <label htmlFor="message" className=" text-main-gray">
                     Message
                     <span className="text-red-400">*</span>
@@ -904,7 +919,7 @@ const Content = () => {
                   <textarea
                     name="message"
                     id="message"
-                    className="block h-40 mt-2 w-full border py-3 pl-3 rounded placeholder:text-gray-400 text-gray-500 sm:text-sm sm:leading-6"
+                    className="block h-40 mt-2 w-full border-2 border-transparent shadow-input py-3 pl-3 rounded placeholder:text-gray-500 text-gray-500 sm:text-sm sm:leading-6"
                     placeholder="Your message"
                   ></textarea>
                 </div>

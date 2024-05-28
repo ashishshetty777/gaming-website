@@ -9,7 +9,7 @@ export const items = [
   },
   {
     title: 'What is Universal Gaming Identity?',
-    content: `Universal Gaming Identity gives you your own universal digital identity using which you can showcase, compete, and earn.`,
+    content: `Universal Gaming Identity gives you your own universal digital identity using which you can showcase, compete and earn.`,
   },
   {
     title: 'What is DID?',
@@ -30,7 +30,7 @@ export const items = [
 ];
 
 const Faq: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState<number[]>([]);
+  const [activeIndex, setActiveIndex] = useState<number[]>([0]);
 
   const toggleFaq = (index: number) => {
     setActiveIndex(prevActiveIndex => {

@@ -42,6 +42,7 @@ const config: Config = {
       },
       boxShadow: {
         card: 'rgba(0, 0, 0, 0.15) 0px 3px 3px 0px',
+        input: '0 0 0 1px #ddd',
       },
       zIndex: {
         minus: '-1',
@@ -55,10 +56,12 @@ const config: Config = {
         816: '816px',
         450: '450px',
         230: '230px',
+        400: '400px',
       },
       width: {
         '35rem': '35rem',
         257: '257px',
+        400: '400px',
       },
       fontFamily: {
         poppins: ['var(--poppins)'],
