@@ -41,32 +41,50 @@ import FaqImage from '../../../../public/assets/faq.jpg';
 import { WobbleCardDemo } from '../wobble';
 import { ArrowRight } from 'lucide-react';
 const Content = () => {
-  let games = [
-    'Pegaxy',
+  let games1 = [
     'League of Legends',
-    'Dota 2',
     'Counter-Strike: Global Offensive',
-    'Fortnite',
-    'Overwatch',
+    "PlayerUnknown's Battlegrounds",
+    'Rainbow Six Siege',
+    'Blockchain Monster Hunt',
+    'League of Kingdoms',
+    'GensoKishi Online',
+    'Alpha League Racing',
+    'Mini Royale: Nations',
+    'Star Atlas: SAGE Labs',
+    'Mighty Action Heroes',
+    'My Crypto Heroes',
+    'Battle Bears Heroes',
+    'Goons of Balatroon',
+    'Galaxy Fight Club',
+    'Tales of Elleria',
+    'Echoes of Empire',
+    'Crypto Unicorns',
+    'Sunflower Land',
+    'Battle Showdown',
+    'Benji Bananas',
+    'DeFi Kingdoms',
+    'Portal Fantasy',
+    'Petopia',
+    'TaleCraft',
+    'Champions Arena',
+    'Eternal Paradox',
     'Call of Duty',
     'Valorant',
-    'Rainbow Six Siege',
-    "PlayerUnknown's Battlegrounds",
     'Rocket League',
     'Philand',
-    'Crypto Unicorns',
-    'Blockchain Monster Hunt',
-    'Sunflower Land',
     'REVV Racing',
     'Buddy Arena',
     'Dogami',
-    'League of Kingdoms',
     'Second World',
-    'GensoKishi Online',
+  ];
+
+  let games2 = [
+    'Pegaxy',
+    'Dota 2',
+    'Fortnite',
+    'Overwatch',
     'CyBall',
-    'Battle Showdown',
-    'Galaxy Fight Club',
-    'Benji Bananas',
     'Arc8',
     'Skyweaver',
     'REALM',
@@ -85,41 +103,26 @@ const Content = () => {
     'Bullieverse',
     'STG Football',
     'Zed Run',
-    'Alpha League Racing',
     'The Heist',
-    'Mini Royale: Nations',
     'EV.IO',
     'Aurory',
     'DeFi Land',
-    'Star Atlas: SAGE Labs',
     'Neopolis',
     'Bladerite',
     'Everseed',
     'Pixel Guild',
     'Genopets',
-    'Mighty Action Heroes',
-    'Goons of Balatroon',
-    'Tales of Elleria',
     'Zeeverse',
     'Bridgeworld',
     'Crabada',
-    'DeFi Kingdoms',
-    'Portal Fantasy',
-    'Petopia',
-    'TaleCraft',
-    'Champions Arena',
-    'Eternal Paradox',
-    'Echoes of Empire',
     'Dragon Strike',
     'Spider Tanks',
     'Meow Match',
     'Town Star',
-    'My Crypto Heroes',
     'Loot by Rogue',
     'Pixels',
     'Axie Infinity',
     'Apeiron',
-    'Battle Bears Heroes',
     'Alien Worlds',
     'Splinterlands',
   ];
@@ -546,10 +549,26 @@ const Content = () => {
           <div className="font-poppins"> Supported Web3-Games</div>
         </div>
         <div className=" w-full pt-5 slider overflow-hidden">
-          <div className="flex m-auto slider-track justify-center">
-            {games.map((game, i) => {
+          <div className="flex h-12 m-auto slider-track justify-center">
+            {games1.map((game, i) => {
               return (
-                <div key={i} className="slide">
+                <div key={i} className="slide w-48">
+                  <div
+                    className={`flex rounded-full mr-3 w-44 text-center py-1 px-2 justify-center text-white`}
+                  >
+                    <div className="ml-1 text-base font-poppinsLight font-extralight">
+                      {game}
+                    </div>
+                  </div>
+                  <span className="h-1.5 mt-2.5 w-1.5 bg-main-green rounded-full"></span>
+                </div>
+              );
+            })}
+          </div>
+          <div className="flex m-auto slider-track justify-center">
+            {games2.map((game, i) => {
+              return (
+                <div key={i} className="slide2">
                   <div
                     className={`flex rounded-full mr-3 w-36  text-center py-1 px-2 justify-center text-white`}
                   >
@@ -624,17 +643,32 @@ const Content = () => {
         <div className="pt-10 mt-0 text-center text-4xl">
           <div className="font-poppins text-black"> About Us</div>
           <div className="md:px-32 text-balance lg:px-32 px-5 pt-5 text-base font-poppinsLight text-main-gray">
-            {`Enoobs is a revolutionary gaming platform that offers universal
-            digital ID to gamers using which they can aggregate their gaming
-            stats and assets from across independent gaming platforms and share
-            their achievements with the world on social media. `}
+            Welcome to Enoobs, your comprehensive gaming profile solution. At
+            Enoobs, we combine KYC verifiability, a robust stats aggregator, and
+            detailed gaming achievements to create unified and verified
+            identities for gamers. Our platform showcases your skills and
+            progress across all partnered platforms, providing a seamless and
+            integrated gaming experience. Our game-specific Single Sign-On (SSO)
+            system is designed to streamline your gaming journey. By integrating
+            with our partner platforms, we allow you to effortlessly onboard and
+            access multiple gaming platforms with a single identity. This
+            seamless integration simplifies the login process and enhances user
+            convenience.
           </div>
           <div className="md:px-32 text-balance lg:px-32 px-5 pt-5 text-base font-poppinsLight text-main-gray">
-            {`The fragmentation of gamers' data across platforms and the inability to track and
-            manage gaming assets are costing gamers the opportunity to showcase
-            and monetize their gaming skills. To empower gamers by providing
-            them the opportunities to showcase and monetize their gaming skills,
-            we are building Enoobs.`}
+            For those passionate about competitive gaming, Enoobs provides a
+            centralized hub for discovering and managing cross-platform events
+            and tournaments. Track your participation and achievements with
+            ease, ensuring you never miss out on important events and enhancing
+            your competitive gaming experience. Moreover, Enoobs delivers
+            valuable analytics to gaming companies, drawing insights from the
+            comprehensive data collected on our platform. These detailed
+            analytics help companies understand user behavior, engagement
+            patterns, and market trends, enabling them to make informed,
+            data-driven decisions to enhance their games and better target their
+            audiences. Join us at Enoobs and elevate your gaming experience with
+            a unified identity, seamless integration, vibrant social
+            interactions, and comprehensive event management.
           </div>
         </div>
       </section>
