@@ -58,6 +58,19 @@ input:focus {
   }
 }
 
+.slide2 {
+  animation: scroll2 60s linear infinite;
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(1000%);
+  }
+}
+
 .testimonial-slider {
   display: block;
   width: 100%;
