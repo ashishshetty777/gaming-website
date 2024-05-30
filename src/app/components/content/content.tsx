@@ -1189,7 +1189,7 @@ const Content = () => {
       </section>
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
         <div className=" grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1">
-          <div>
+          <div className="m-auto">
             <div className="text-5xl font-bold text-black text-center lg:text-left md:text-center">
               Frequently asked questions
             </div>
