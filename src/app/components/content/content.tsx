@@ -855,8 +855,8 @@ const Content = () => {
               Our Team
             </h2>
             <p className="font-light text-gray-500 lg:mb-16 sm:text-xl">
-              Explore the whole collection of open-source web components and
-              elements built with the utility classes from Tailwind
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page.
             </p>
           </div>
           <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
