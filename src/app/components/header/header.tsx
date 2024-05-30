@@ -22,9 +22,6 @@ const Header = () => {
               <Link href="/">Home</Link>
             </div>
             <div className=" m-auto text-white p-3 font-light text-sm">
-              <Link href="/">About</Link>
-            </div>
-            <div className=" m-auto text-white p-3 font-light text-sm">
               <Link href="/">Blog</Link>
             </div>
             <div className=" m-auto text-white p-3 font-light text-sm">
