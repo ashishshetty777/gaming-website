@@ -62,6 +62,7 @@ const config: Config = {
         '35rem': '35rem',
         257: '257px',
         400: '400px',
+        500: '500px',
       },
       fontFamily: {
         poppins: ['var(--poppins)'],
