@@ -40,6 +40,7 @@ import Faq from '../faqs/faqs';
 import FaqImage from '../../../../public/assets/faq.jpg';
 import { WobbleCardDemo } from '../wobble';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 const Content = () => {
   let games1 = [
     'League of Legends',
@@ -245,8 +246,9 @@ const Content = () => {
   return (
     <>
       <div className="bg-black lg:bg-unset md:bg-unset relative">
+        <div className="w-full h-full"></div>
         <video
-          className="bg-vid hidden lg:block md:block w-full object-center z-minus"
+          className="bg-vid blur-sm hidden lg:block md:block w-full object-center z-minus"
           poster={'assets/Hero.png'}
           autoPlay
           loop
@@ -306,15 +308,22 @@ const Content = () => {
           </div>
           <div className="w-full">
             <div className="flex mt-2">
-              <Image
-                className="h-12 w-36 cursor-pointer"
-                src={GooglePlayBtn}
-                alt="Google-play"
-              />
-              <div className="text-main-green font-bold text-xl cursor-pointer p-2 ml-5 mt-0 flex">
-                Join us now
-                <ArrowRight className="ml-2 mt-1" />
-              </div>
+              <Link
+                href="https://play.google.com/store/apps/details?id=com.enoobs.app"
+                target="_blank"
+              >
+                <Image
+                  className="h-12 w-36 cursor-pointer"
+                  src={GooglePlayBtn}
+                  alt="Google-play"
+                />
+              </Link>
+              <Link href={'https://beta-app.enoobs.com/'} target="_blank">
+                <div className="text-main-green font-bold text-xl cursor-pointer p-2 ml-5 mt-0 flex">
+                  Join us now
+                  <ArrowRight className="ml-2 mt-1" />
+                </div>
+              </Link>
             </div>
           </div>
         </section>
@@ -409,7 +418,6 @@ const Content = () => {
           </div>
         </div>
         <div className="mt-5 hidden lg:block md:block relative">
-          {/* <Image className="w-3/5 h-3/5 m-auto" src={Circle} alt="circle-bg" /> */}
           <div className="ml-0 mr-0 gap-0 grid grid-cols-midsection">
             <div className="relative mt-28 md:px-1 lg:px-8">
               <div className="flex flex-col">
@@ -860,15 +868,15 @@ const Content = () => {
             </p>
           </div>
           <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex">
-              <a href="#">
+            <div className="items-center  bg-gray-50 rounded-lg shadow sm:flex">
+              <a href="#" className="w-2/4">
                 <Image
                   className="w-500 sm:h-auto md:h-full lg:h-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src={Team1}
                   alt="Bonnie Avatar"
                 ></Image>
               </a>
-              <div className="p-5">
+              <div className="p-5 w-2/4">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900">
                   <a href="#">Anish Kapoor</a>
                 </h3>
@@ -941,14 +949,14 @@ const Content = () => {
               </div>
             </div>
             <div className="items-center bg-gray-50 rounded-lg shadow sm:flex">
-              <a href="#">
+              <a href="#" className="w-2/4">
                 <Image
                   className="w-500 sm:h-auto md:h-full lg:h-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src={Team2}
                   alt="Jese Avatar"
                 ></Image>
               </a>
-              <div className="p-5">
+              <div className="p-5 w-2/4">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900">
                   <a href="#">Ved Prakash</a>
                 </h3>
@@ -1021,14 +1029,14 @@ const Content = () => {
               </div>
             </div>
             <div className="items-center bg-gray-50 rounded-lg shadow sm:flex">
-              <a href="#">
+              <a href="#" className="w-2/4">
                 <Image
                   className="w-500 sm:h-auto md:h-full lg:h-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src={Team3}
                   alt="Michael Avatar"
                 ></Image>
               </a>
-              <div className="p-5">
+              <div className="p-5 w-2/4">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900">
                   <a href="#">Gagandeep Singh</a>
                 </h3>
@@ -1101,14 +1109,14 @@ const Content = () => {
               </div>
             </div>
             <div className="items-center bg-gray-50 rounded-lg shadow sm:flex">
-              <a href="#">
+              <a href="#" className="w-2/4">
                 <Image
                   className="w-500 sm:h-auto md:h-full lg:h-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src={Team4}
                   alt="Sofia Avatar"
                 ></Image>
               </a>
-              <div className="p-5">
+              <div className="p-5 w-2/4">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900">
                   <a href="#">Vishwanath Reddy</a>
                 </h3>
