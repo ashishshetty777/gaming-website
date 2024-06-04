@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
+  scroll-padding-top: 140px;
 }
 
 :root {
@@ -35,6 +36,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+#contact-us {
+  scroll-behavior: smooth;
 }
 
 textarea:focus,

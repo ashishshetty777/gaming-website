@@ -2,11 +2,20 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Logo from '../../../../public/assets/enoobs_logo2.png';
 const Header = () => {
   const [showSidePanel, setShowSidePanel] = useState(false);
+  const pathname = usePathname();
+  console.log(pathname);
   return (
-    <header className="z-10 md:absolute lg:absolute relative top-0 w-full md:px-20 lg:px-20 px-10 py-5 flex bg-black lg:bg-unset md:bg-unset lg:bg-none md:bg-none justify-between font-inter">
+    <header
+      className={`z-10 md:absolute lg:absolute relative top-0 w-full md:px-20 lg:px-20 px-10 py-5 flex justify-between font-inter ${
+        pathname === '/about-us'
+          ? 'bg-black'
+          : 'lg:bg-none md:bg-none bg-black lg:bg-unset md:bg-unset'
+      }`}
+    >
       <nav
         className=" flex w-full items-center justify-between py-1"
         aria-label="Global"
@@ -22,13 +31,15 @@ const Header = () => {
               <Link href="/">Home</Link>
             </div>
             <div className=" m-auto text-white p-3 font-light hover:font-bold hover:underline text-sm">
-              <Link href="/">Blog</Link>
+              <Link target="_blank" href="https://medium.com/@enoobs">
+                Blog
+              </Link>
             </div>
             <div className=" m-auto text-white p-3 font-light hover:font-bold hover:underline text-sm">
-              <Link href="#about-us">About Us</Link>
+              <Link href="/about-us">About Us</Link>
             </div>
             <div className=" m-auto text-white p-3 font-light hover:font-bold hover:underline text-sm">
-              <Link href="#contact-us">Contact</Link>
+              <Link href="#contact-us">Contact Us</Link>
             </div>
             {/* <div className="ml-4 text-white cursor-pointer text-sm py-3.5 px-6 rounded-full h-12 bg-main-green">{`Download`}</div> */}
           </div>

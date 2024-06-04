@@ -57,19 +57,19 @@ const Footer = () => {
             <div className="text-lg px-2 font-bold text-white">Quick Links</div>
             <Link
               href="#about-us"
-              className="mt-5 px-2 text-md font-extralight text-white grid"
+              className="mt-5 hover:underline px-2 text-md font-extralight text-white grid"
             >
               About Us
             </Link>
             <Link
               href="#contact-us"
-              className="mt-2 px-2 text-md font-extralight text-white grid"
+              className="mt-2 hover:underline px-2 text-md font-extralight text-white grid"
             >
               Contact Us
             </Link>
             <Link
               href="#team"
-              className="mt-2 px-2 text-md font-extralight text-white grid"
+              className="mt-2 hover:underline px-2 text-md font-extralight text-white grid"
             >
               Team
             </Link>
@@ -80,14 +80,14 @@ const Footer = () => {
           <Link
             href="https://www.enoobs.com/privacy-policy/"
             target="_blank"
-            className="mt-5 px-2 text-md font-extralight text-white grid"
+            className="mt-5 hover:underline px-2 text-md font-extralight text-white grid"
           >
             Privacy Policy
           </Link>
           <Link
             href="https://www.enoobs.com/terms-conditions/"
             target="_blank"
-            className="mt-2 px-2 text-md font-extralight text-white grid"
+            className="mt-2 px-2 hover:underline text-md font-extralight text-white grid"
           >
             Terms & Conditions
           </Link>
@@ -114,19 +114,19 @@ const Footer = () => {
             <div className="text-lg px-2 font-bold text-white">Quick Links</div>
             <Link
               href="#about-us"
-              className="mt-5 px-2 text-md font-extralight text-white grid"
+              className="mt-5 px-2 hover:underline text-md font-extralight text-white grid"
             >
               About Us
             </Link>
             <Link
               href="#contact-us"
-              className="mt-2 px-2 text-md font-extralight text-white grid"
+              className="mt-2  hover:underlinepx-2 text-md font-extralight text-white grid"
             >
               Contact Us
             </Link>
             <Link
               href="#team"
-              className="mt-2 px-2 text-md font-extralight text-white grid"
+              className="mt-2 px-2 hover:underline text-md font-extralight text-white grid"
             >
               Team
             </Link>
