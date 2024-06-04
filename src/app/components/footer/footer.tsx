@@ -17,13 +17,18 @@ const Footer = () => {
             alt=""
           ></Image>
         </Link>
-        <div className=" lg:text-left md:text-left text-md font-extralight text-white text-center">
-          <Image
-            className="sm:basis-full h-22 w-44 m-auto md:float-left mt-5 lg:float-left"
-            src={GooglePlayBtn}
-            alt=""
-          ></Image>
-        </div>
+        <Link
+          href="https://play.google.com/store/apps/details?id=com.enoobs.app"
+          target="_blank"
+        >
+          <div className="cursor-pointer lg:text-left md:text-left text-md font-extralight text-white text-center">
+            <Image
+              className="sm:basis-full h-22 w-44 m-auto md:float-left mt-5 lg:float-left"
+              src={GooglePlayBtn}
+              alt=""
+            ></Image>
+          </div>
+        </Link>
       </div>
       <div className="flex grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 p-6 lg:px-8 md:px-8">
         <div className="hidden lg:flex lg:flex-col md:flex md:flex-col">
@@ -34,13 +39,18 @@ const Footer = () => {
               alt=""
             ></Image>
           </Link>
-          <div className="lg:text-left md:text-left text-md font-extralight text-white text-center">
-            <Image
-              className="sm:basis-full h-22 w-44 m-auto md:float-left mt-5 lg:float-left"
-              src={GooglePlayBtn}
-              alt=""
-            ></Image>
-          </div>
+          <Link
+            href="https://play.google.com/store/apps/details?id=com.enoobs.app"
+            target="_blank"
+          >
+            <div className="cursor-pointer lg:text-left md:text-left text-md font-extralight text-white text-center">
+              <Image
+                className="sm:basis-full h-22 w-44 m-auto md:float-left mt-5 lg:float-left"
+                src={GooglePlayBtn}
+                alt=""
+              ></Image>
+            </div>
+          </Link>
         </div>
         <div className="hidden lg:block md:block lg:ml-20 md:ml-20 ml-0 text-center lg:text-left md:text-left">
           <div className="">
