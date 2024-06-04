@@ -18,16 +18,16 @@ const Header = () => {
         </div>
         <div className="lg:flex md:flex hidden justify-end w-full">
           <div className="flex float-left">
-            <div className=" m-auto text-white p-3 font-light text-sm">
+            <div className=" m-auto text-white p-3 font-light hover:font-bold hover:underline text-sm">
               <Link href="/">Home</Link>
             </div>
-            <div className=" m-auto text-white p-3 font-light text-sm">
+            <div className=" m-auto text-white p-3 font-light hover:font-bold hover:underline text-sm">
               <Link href="/">Blog</Link>
             </div>
-            <div className=" m-auto text-white p-3 font-light text-sm">
+            <div className=" m-auto text-white p-3 font-light hover:font-bold hover:underline text-sm">
               <Link href="#about-us">About Us</Link>
             </div>
-            <div className=" m-auto text-white p-3 font-light text-sm">
+            <div className=" m-auto text-white p-3 font-light hover:font-bold hover:underline text-sm">
               <Link href="#contact-us">Contact</Link>
             </div>
             {/* <div className="ml-4 text-white cursor-pointer text-sm py-3.5 px-6 rounded-full h-12 bg-main-green">{`Download`}</div> */}

@@ -874,8 +874,7 @@ const Content = () => {
                 </h3>
                 <span className="text-gray-500">Chief executive Officer</span>
                 <p className="mt-3 mb-4 font-light text-gray-500">
-                  Bonnie drives the technical strategy of the flowbite platform
-                  and brand.
+                  Product Owner NexBloc, Securvaults, Iotric
                 </p>
                 <ul className="flex space-x-4 sm:mt-0">
                   <li>
@@ -955,8 +954,7 @@ const Content = () => {
                 </h3>
                 <span className="text-gray-500">Chief Technology Officer</span>
                 <p className="mt-3 mb-4 font-light text-gray-500">
-                  Jese drives the technical strategy of the flowbite platform
-                  and brand.
+                  Serial Entrepenuer Iotric, NexBloc, MyIDFI
                 </p>
                 <ul className="flex space-x-4 sm:mt-0">
                   <li>
@@ -1036,8 +1034,7 @@ const Content = () => {
                 </h3>
                 <span className="text-gray-500">Technical Lead</span>
                 <p className="mt-3 mb-4 font-light text-gray-500">
-                  Michael drives the technical strategy of the flowbite platform
-                  and brand.
+                  Team Lead Izzyhomes, ThirdEye, FriendsChat
                 </p>
                 <ul className="flex space-x-4 sm:mt-0">
                   <li>
@@ -1117,8 +1114,7 @@ const Content = () => {
                 </h3>
                 <span className="text-gray-500">Solutions Architect</span>
                 <p className="mt-3 mb-4 font-light text-gray-500">
-                  Lana drives the technical strategy of the flowbite platform
-                  and brand.
+                  Technical Architect Croplife, Hindxr, Kardiogenics
                 </p>
                 <ul className="flex space-x-4 sm:mt-0">
                   <li>
