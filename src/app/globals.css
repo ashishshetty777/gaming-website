@@ -231,19 +231,7 @@ input:focus {
 .one {
   background-color: #313c40;
 }
-
-.two {
-  background-color: #1cd1a1;
-}
-
-.three {
-  background-color: #5680e9;
-}
-
-.four {
-  background-color: #00ced1;
-}
-
-.five {
-  background-color: #fc5c42;
+.hs-button {
+  background-color: #06a38b !important;
+  float: right;
 }

@@ -17,46 +17,30 @@ const AboutUs = () => {
       <section id="about-us" className="md:px-20 lg:px-20 px-10 py-10 mt-10">
         <div className="pt-10 mt-0 text-center text-4xl">
           <div className="mb-4 font-poppins text-black"> About Us</div>
-          <div className="flex">
-            <div className="w-2/4 text-left pt-5 text-base font-poppinsLight text-main-gray">
-              <p className="">
-                At Enoobs, we combine KYC verifiability, a robust stats
-                aggregator, and detailed gaming achievements to create unified
-                and verified identities for gamers. Our platform showcases your
-                skills and progress across all partnered platforms, providing a
-                seamless and integrated gaming experience.
+          <div className="flex lg:flex-row md:flex-col-reverse flex-col-reverse justify-center">
+            <div className="basis-1/2 lg:text-left md:text-center text-balance text-center pt-5 text-base font-poppinsLight text-main-gray">
+              <p className="pt-10">
+                At Enoobs, we create unified and verified gamer identities by
+                combining KYC verifiability, robust stats aggregation, and
+                detailed gaming achievements. Our platform showcases your skills
+                across all partnered platforms, streamlining your gaming journey
+                with a game-specific Single Sign-On (SSO) system for effortless
+                access.
               </p>
               <p className="pt-2">
-                Our game-specific Single Sign-On (SSO) system is designed to
-                streamline your gaming journey. By integrating with our partner
-                platforms, we allow you to effortlessly onboard and access
-                multiple gaming platforms with a single identity. This seamless
-                integration simplifies the login process and enhances user
-                convenience.
+                Enoobs is a centralized hub for discovering and managing
+                cross-platform events and tournaments, making it easy to track
+                your participation and achievements. We also provide valuable
+                analytics to gaming companies, offering insights into user
+                behavior and market trends to inform data-driven decisions.
               </p>
               <p className="pt-2">
-                For those passionate about competitive gaming, Enoobs provides a
-                centralized hub for discovering and managing cross-platform
-                events and tournaments. Track your participation and
-                achievements with ease, ensuring you never miss out on important
-                events and enhancing your competitive gaming experience.
-              </p>
-              <p className="pt-2">
-                Moreover, Enoobs delivers valuable analytics to gaming
-                companies, drawing insights from the comprehensive data
-                collected on our platform. These detailed analytics help
-                companies understand user behavior, engagement patterns, and
-                market trends, enabling them to make informed, data-driven
-                decisions to enhance their games and better target their
-                audiences.
-              </p>
-              <p className="pt-2">
-                Join us at Enoobs and elevate your gaming experience with a
-                unified identity, seamless integration, vibrant social
-                interactions, and comprehensive event management.
+                Join Enoobs to enhance your gaming experience with a unified
+                identity, seamless integration, vibrant social interactions, and
+                comprehensive event management.
               </p>
             </div>
-            <div className="pt-10 mx-auto w-2/4">
+            <div className="pt-10 mx-auto basis-1/2">
               <Image src={Aboutus} alt="about-us" />
             </div>
           </div>
@@ -71,14 +55,14 @@ const AboutUs = () => {
           </div>
           <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
             <div className="items-center  bg-gray-50 rounded-lg shadow sm:flex">
-              <div className="w-2/4">
+              <div className="lg:w-2/4 md:w-2/4 w-full">
                 <Image
                   className="w-500 sm:h-auto md:h-full lg:h-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src={Team1}
                   alt="Bonnie Avatar"
                 ></Image>
               </div>
-              <div className="p-5 w-2/4">
+              <div className="p-5 lg:w-2/4 md:w-2/4 w-full">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900">
                   <a href="#">Anish Kapoor</a>
                 </h3>
@@ -151,14 +135,14 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="items-center bg-gray-50 rounded-lg shadow sm:flex">
-              <div className="w-2/4">
+              <div className="lg:w-2/4 md:w-2/4 w-full">
                 <Image
                   className="w-500 sm:h-auto md:h-full lg:h-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src={Team2}
                   alt="Jese Avatar"
                 ></Image>
               </div>
-              <div className="p-5 w-2/4">
+              <div className="p-5 lg:w-2/4 md:w-2/4 w-full">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900">
                   <a href="#">Ved Prakash</a>
                 </h3>
@@ -231,14 +215,14 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="items-center bg-gray-50 rounded-lg shadow sm:flex">
-              <div className="w-2/4">
+              <div className="lg:w-2/4 md:w-2/4 w-full">
                 <Image
                   className="w-500 sm:h-auto md:h-full lg:h-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src={Team3}
                   alt="Michael Avatar"
                 ></Image>
               </div>
-              <div className="p-5 w-2/4">
+              <div className="p-5 lg:w-2/4 md:w-2/4 w-full">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900">
                   <a href="#">Gagandeep Singh</a>
                 </h3>
@@ -311,14 +295,14 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="items-center bg-gray-50 rounded-lg shadow sm:flex">
-              <div className="w-2/4">
+              <div className="lg:w-2/4 md:w-2/4 w-full">
                 <Image
                   className="w-500 sm:h-auto md:h-full lg:h-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src={Team4}
                   alt="Sofia Avatar"
                 ></Image>
               </div>
-              <div className="p-5 w-2/4">
+              <div className="p-5 lg:w-2/4 md:w-2/4 w-full">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900">
                   <a href="#">Vishwanath Reddy</a>
                 </h3>

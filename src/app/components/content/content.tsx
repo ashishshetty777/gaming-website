@@ -31,6 +31,7 @@ import Ellipse3 from '../../../../public/assets/Ellipse3.png';
 import Ellipse4 from '../../../../public/assets/Ellipse4.png';
 import Ellipse5 from '../../../../public/assets/Ellipse5.png';
 import Ellipse6 from '../../../../public/assets/Ellipse6.png';
+import HubSpotForm from '../HubSpotForm';
 import Circle from '../../../../public/assets/Circle.png';
 import Faq from '../faqs/faqs';
 import FaqImage from '../../../../public/assets/faq.jpg';
@@ -853,7 +854,8 @@ const Content = () => {
           </div>
         </div>
         <div className="lg:mt-12 md:mt-12 mt-0 flex flex-col ">
-          <form>
+          <HubSpotForm />
+          {/* <form>
             <div className="flex flex-col md:flex-row lg:flex-row">
               <div className="relative mt-10 basis-2/6">
                 <div className="flex flex-col pr-5">
@@ -930,12 +932,12 @@ const Content = () => {
                 </div>
               </div>
             </div>
-          </form>
-          <div className="w-full">
+          </form> */}
+          {/* <div className="w-full">
             <button className="mt-10 mr-5 float-right text-white cursor-pointer text-base font-poppinsLight py-2.5 px-5 rounded-full bg-main-green">
               Send Message
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
