@@ -32,7 +32,6 @@ import Ellipse3 from '../../../../public/assets/Ellipse3.png';
 import Ellipse4 from '../../../../public/assets/Ellipse4.png';
 import Ellipse5 from '../../../../public/assets/Ellipse5.png';
 import Ellipse6 from '../../../../public/assets/Ellipse6.png';
-import HubSpotForm from '../HubSpotForm';
 import Circle from '../../../../public/assets/Circle.png';
 import Faq from '../faqs/faqs';
 import FaqImage from '../../../../public/assets/faq.jpg';
