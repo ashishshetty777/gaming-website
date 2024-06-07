@@ -74,6 +74,7 @@ const Content = () => {
         variant: 'destructive',
         description: 'Please fill all the required fields',
       });
+      setLoading(false);
       return;
     }
 
