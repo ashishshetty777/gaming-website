@@ -18,7 +18,7 @@ const AboutUs = () => {
         <div className="pt-10 mt-0 text-center text-4xl">
           <div className="mb-4 font-poppins text-black"> About Us</div>
           <div className="flex lg:flex-row md:flex-col-reverse flex-col-reverse justify-center">
-            <div className="basis-1/2 lg:text-left md:text-center text-balance text-center pt-5 text-base font-poppinsLight text-main-gray">
+            <div className="basis-1/2 lg:text-left md:text-center text-center pt-5 text-base font-poppinsLight text-main-gray">
               <p className="pt-10">
                 At Enoobs, we create unified and verified gamer identities by
                 combining KYC verifiability, robust stats aggregation, and
