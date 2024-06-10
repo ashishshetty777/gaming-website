@@ -39,7 +39,7 @@ const Header = () => {
               <Link href="/about-us">About Us</Link>
             </div>
             <div className=" m-auto text-white p-3 font-light hover:font-bold hover:underline text-sm">
-              <Link href="#contact-us">Contact Us</Link>
+              <Link href="/#contact-us">Contact Us</Link>
             </div>
             {/* <div className="ml-4 text-white cursor-pointer text-sm py-3.5 px-6 rounded-full h-12 bg-main-green">{`Download`}</div> */}
           </div>

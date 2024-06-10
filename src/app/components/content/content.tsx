@@ -704,7 +704,7 @@ const Content = () => {
           </div>
         </div>
         <div className="flex border-t border-slate-700 mt-8 pt-20 text-white">
-          <div className="basis-1/2 text-4xl font-bold">
+          <div className="basis-1/2 text-4xl m-auto font-bold">
             Why Enoobs Ecosystem Is Needed
           </div>
           <div className="basis-1/2 text-base font-poppinsLight font-extralight mt-4 border-l-2 pl-4 border-main-green">
@@ -959,7 +959,7 @@ const Content = () => {
       </section>
       <section
         id="contact-us"
-        className="bg-white md:px-20 lg:px-20 px-10 py-10"
+        className="bg-light-gray md:px-20 lg:px-20 px-10 py-10"
       >
         <div className="flex text-left lg:flex-row md:flex-row flex-col ">
           <div className="text-7xl font-bold">
