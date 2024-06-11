@@ -132,7 +132,7 @@ const Footer = () => {
               About Us
             </Link>
             <Link
-              href="#contact-us"
+              href="/#contact-us"
               className="mt-2 hover:underline px-2 text-md font-extralight text-white grid"
             >
               Contact Us
@@ -155,7 +155,7 @@ const Footer = () => {
             Privacy Policy
           </Link>
           <Link
-            href="https://www.enoobs.com/terms-conditions/"
+            href="/terms-of-service"
             target="_blank"
             className="mt-2 px-2 hover:underline text-md font-extralight text-white grid"
           >
@@ -198,7 +198,7 @@ const Footer = () => {
               About Us
             </Link>
             <Link
-              href="#contact-us"
+              href="/#contact-us"
               className="mt-2  hover:underlinepx-2 text-md font-extralight text-white grid"
             >
               Contact Us
