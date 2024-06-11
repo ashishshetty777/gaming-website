@@ -102,12 +102,13 @@ export default function PrivacyPolicy() {
               7. Disclaimer of Warranties; Limitation of Liability
             </div>
             <div className="m-2">
-              <div className="font-semibold">a. No Warranties:</div> The service
+              <div className="font-semibold">a. No Warranties:</div>{' '}
+              {`The service
               is provided on an "as is" and "as available" basis. Enoobs
               expressly disclaims all warranties of any kind, whether express or
               implied, including, but not limited to, the implied warranties of
               merchantability, fitness for a particular purpose, and
-              non-infringement.
+              non-infringement.`}
             </div>
           </div>
           <div className="my-2">
@@ -122,13 +123,14 @@ export default function PrivacyPolicy() {
           <div className="my-2">
             <div className="text-xl my-2">9. Indemnification</div>
             <div className="m-2">
-              <div className="font-semibold">a. Your Responsibility:</div> You
+              <div className="font-semibold">a. Your Responsibility:</div>{' '}
+              {`You
               agree to indemnify and hold harmless Enoobs, its contractors, and
               its licensors, and their respective directors, officers,
               employees, and agents from and against any and all claims and
               expenses, including attorneys' fees, arising out of your use of
               the website, including but not limited to your violation of this
-              Agreement.
+              Agreement.`}
             </div>
           </div>
           <div className="my-2">
