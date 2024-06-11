@@ -1,3 +1,5 @@
+'use client';
+import { useState } from 'react';
 import Image from 'next/image';
 import Logo from '../../../../public/assets/enoobs_logo.png';
 import GooglePlayBtn from '../../../../public/assets/get_it_on.png';
@@ -5,10 +7,78 @@ import Youtube from '../../../../public/assets/Youtube-green.png';
 import Linkedin from '../../../../public/assets/Linkedin-green.png';
 import X from '../../../../public/assets/X-green.png';
 import Link from 'next/link';
+import { useToast } from '@/components/ui/use-toast';
+import { Toaster } from '@/components/ui/toaster';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const { toast } = useToast();
+
+  const onFormSubmit = (event: any) => {
+    const apiUrl =
+      'https://api.hsforms.com/submissions/v3/integration/submit/46376393/932209a5-242d-40d9-9662-41abaf981b43';
+    event.preventDefault();
+    if (!email) {
+      toast({
+        variant: 'destructive',
+        description: 'Please fill your email id',
+      });
+      return;
+    }
+
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        fields: [
+          {
+            value: email,
+            objectTypeId: '0-1',
+            name: 'email',
+          },
+        ],
+      }),
+    };
+
+    fetch(apiUrl, requestOptions)
+      .then(response => {
+        return response.json();
+      })
+      .then((result: any) => {
+        if (!result.statusCode) {
+          toast({
+            description:
+              'Your response has been sent. We will contact you shortly!',
+          });
+          setEmail('');
+
+          return;
+        }
+
+        if (result.statusCode === 400) {
+          toast({
+            variant: 'destructive',
+            description: result.message[0],
+          });
+          return;
+        }
+
+        if (result.statusCode > 400) {
+          throw new Error();
+        }
+      })
+      .catch(error => {
+        toast({
+          variant: 'destructive',
+          description: `Oops... Something went wrong.f`,
+        });
+      });
+  };
+
   return (
-    <div className=" px-7 pt-20 pb-20 lg:pb-7 md:pb-7 bg-dark-blue z-50 relative">
+    <div className=" px-7 pt-10 pb-20 lg:pb-10 md:pb-10 bg-dark-blue z-50 relative">
       <div className="block  lg:hidden md:hidden">
         <Link href="/" className="-m-1.5 p-1.5">
           <Image
@@ -62,7 +132,7 @@ const Footer = () => {
               About Us
             </Link>
             <Link
-              href="#contact-us"
+              href="/#contact-us"
               className="mt-2 hover:underline px-2 text-md font-extralight text-white grid"
             >
               Contact Us
@@ -98,13 +168,22 @@ const Footer = () => {
               Join our mailing list and hear about new features
             </div>
             <div className="relative mt-4 ml-2 rounded-md shadow-sm">
-              <div className="pointer-events-none absolute inset-y-0 right-2 flex items-center pl-3">
+              <div
+                onClick={event => {
+                  onFormSubmit(event);
+                }}
+                className="cursor-pointer absolute inset-y-0 right-2 flex items-center pl-3"
+              >
                 <span className="text-white text-base">→</span>
               </div>
               <input
                 type="text"
                 name="email"
                 id="email"
+                value={email}
+                onChange={e => {
+                  setEmail(e.currentTarget.value);
+                }}
                 className="block w-full bg-dark-blue rounded-md border py-1.5 pl-7 pr-20 text-white placeholder:text-gray-400 sm:text-base sm:leading-6"
                 placeholder="Email"
               />
@@ -119,7 +198,7 @@ const Footer = () => {
               About Us
             </Link>
             <Link
-              href="#contact-us"
+              href="/#contact-us"
               className="mt-2  hover:underlinepx-2 text-md font-extralight text-white grid"
             >
               Contact Us
@@ -186,6 +265,7 @@ const Footer = () => {
           © 2024 Enoobs. All right reserved
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };
