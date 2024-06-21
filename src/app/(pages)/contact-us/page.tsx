@@ -148,7 +148,7 @@ const ContactUs = () => {
           <div className="basis-1/2 m-auto ">
             <Image
               src={Contactus}
-              className="float-right w-96 h-96"
+              className="m-auto w-96 h-96 mt-5"
               alt="about-us"
             />
           </div>
