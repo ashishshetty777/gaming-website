@@ -78,7 +78,7 @@ const Footer = () => {
   };
 
   return (
-    <div className=" px-7 pt-10 pb-20 lg:pb-10 md:pb-10 bg-dark-blue z-50 relative">
+    <div className="px-7 pt-20 pb-20 lg:pb-16 md:pb-16 bg-dark-blue z-50 relative">
       <div className="block  lg:hidden md:hidden">
         <Link href="/" className="-m-1.5 p-1.5">
           <Image
@@ -126,13 +126,13 @@ const Footer = () => {
           <div className="">
             <div className="text-lg px-2 font-bold text-white">Quick Links</div>
             <Link
-              href="#about-us"
+              href="/about-us"
               className="mt-5 hover:underline px-2 text-md font-extralight text-white grid"
             >
               About Us
             </Link>
             <Link
-              href="/#contact-us"
+              href="/contact-us"
               className="mt-2 hover:underline px-2 text-md font-extralight text-white grid"
             >
               Contact Us
@@ -192,13 +192,13 @@ const Footer = () => {
           <div className="text-center block lg:hidden md:hidden">
             <div className="text-lg px-2 font-bold text-white">Quick Links</div>
             <Link
-              href="#about-us"
+              href="/about-us"
               className="mt-5 px-2 hover:underline text-md font-extralight text-white grid"
             >
               About Us
             </Link>
             <Link
-              href="/#contact-us"
+              href="/contact-us"
               className="mt-2  hover:underlinepx-2 text-md font-extralight text-white grid"
             >
               Contact Us
