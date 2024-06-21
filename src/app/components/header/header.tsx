@@ -43,7 +43,7 @@ const Header = () => {
               <Link href="/contact-us">Contact Us</Link>
             </div>
             <Link href={'https://beta-app.enoobs.com/'} target="_blank">
-              <div className="ml-4 flex text-white cursor-pointer text-sm py-2 px-3 rounded-full bg-main-green">
+              <div className="ml-4 flex text-white cursor-pointer text-sm py-2 px-3.5 rounded-full bg-main-green">
                 <span className="mt-px"> {`Join us now`}</span>
                 <ArrowRight className="ml-1" />
               </div>
