@@ -832,7 +832,25 @@ const Content = () => {
           </div>
         </div>
       </section> */}
-
+      <section className="bg-gray b-light-gray border-b md:px-20 lg:px-20 px-10 py-10">
+        <div className="py-5 text-center">
+          <h2 className="text-4xl font-poppins text-black">
+            Lets work together
+          </h2>
+          <div className="py-3 text-base font-poppinsLight text-balance text-main-gray">
+            Lets talk and turn your great idea into something even greater
+          </div>
+          <div className="pt-3">
+            <Link
+              className="m-auto text-center rounded-lg bg-main-green p-3 text-white"
+              href="/contact-us"
+              target="_blank"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      </section>
       <section className="bg-white md:px-20 lg:px-20 px-10 py-10">
         <div className=" grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1">
           <div className="m-auto">
