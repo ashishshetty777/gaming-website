@@ -126,7 +126,7 @@ const Footer = () => {
           <div className="">
             <div className="text-lg px-2 font-bold text-white">Quick Links</div>
             <Link
-              href="#about-us"
+              href="/about-us"
               className="mt-5 hover:underline px-2 text-md font-extralight text-white grid"
             >
               About Us
@@ -138,7 +138,7 @@ const Footer = () => {
               Contact Us
             </Link>
             <Link
-              href="#team"
+              href="/about-us#team"
               className="mt-2 hover:underline px-2 text-md font-extralight text-white grid"
             >
               Team
@@ -192,7 +192,7 @@ const Footer = () => {
           <div className="text-center block lg:hidden md:hidden">
             <div className="text-lg px-2 font-bold text-white">Quick Links</div>
             <Link
-              href="#about-us"
+              href="/about-us"
               className="mt-5 px-2 hover:underline text-md font-extralight text-white grid"
             >
               About Us
@@ -204,7 +204,7 @@ const Footer = () => {
               Contact Us
             </Link>
             <Link
-              href="#team"
+              href="/about-us#team"
               className="mt-2 px-2 hover:underline text-md font-extralight text-white grid"
             >
               Team
