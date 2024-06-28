@@ -46,7 +46,10 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="bg-light-gray md:px-20 lg:px-20 px-10 py-10">
+      <section
+        id="team"
+        className="bg-light-gray md:px-20 lg:px-20 px-10 py-10"
+      >
         <div className="mx-auto max-w-screen-xl">
           <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
@@ -71,7 +74,7 @@ const AboutUs = () => {
                   Product Owner NexBloc, Securvaults, Iotric
                 </p>
                 <ul className="flex space-x-4 sm:mt-0">
-                  <li>
+                  {/* <li>
                     <a
                       href=""
                       target="_blank"
@@ -86,7 +89,7 @@ const AboutUs = () => {
                         <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
                       </svg>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="https://www.linkedin.com/in/anishkapoor999/?original_referer=https%3A%2F%2Fwww.enoobs.com%2F"
@@ -94,7 +97,7 @@ const AboutUs = () => {
                       className="text-gray-500 hover:text-gray-900"
                     >
                       <svg
-                        className="w-5 h-5"
+                        className="w-8 h-8"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
@@ -123,7 +126,7 @@ const AboutUs = () => {
                   Serial Entrepenuer Iotric, NexBloc, MyIDFI
                 </p>
                 <ul className="flex space-x-4 sm:mt-0">
-                  <li>
+                  {/* <li>
                     <a
                       href=""
                       target="_blank"
@@ -138,7 +141,7 @@ const AboutUs = () => {
                         <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
                       </svg>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="https://www.linkedin.com/in/prakashved04/"
@@ -146,7 +149,7 @@ const AboutUs = () => {
                       className="text-gray-500 hover:text-gray-900"
                     >
                       <svg
-                        className="w-5 h-5"
+                        className="w-8 h-8"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
@@ -175,7 +178,7 @@ const AboutUs = () => {
                   Team Lead Izzyhomes, ThirdEye, FriendsChat
                 </p>
                 <ul className="flex space-x-4 sm:mt-0">
-                  <li>
+                  {/* <li>
                     <a
                       href=""
                       target="_blank"
@@ -190,7 +193,7 @@ const AboutUs = () => {
                         <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
                       </svg>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="https://www.linkedin.com/in/gagandeep-negi-45253942/"
@@ -198,7 +201,7 @@ const AboutUs = () => {
                       className="text-gray-500 hover:text-gray-900"
                     >
                       <svg
-                        className="w-5 h-5"
+                        className="w-8 h-8"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
@@ -227,7 +230,7 @@ const AboutUs = () => {
                   Technical Architect Croplife, Hindxr, Kardiogenics
                 </p>
                 <ul className="flex space-x-4 sm:mt-0">
-                  <li>
+                  {/* <li>
                     <a
                       href=""
                       target="_blank"
@@ -242,7 +245,7 @@ const AboutUs = () => {
                         <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
                       </svg>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="https://www.linkedin.com/in/viswanath-reddy-s-242874111/"
@@ -250,7 +253,7 @@ const AboutUs = () => {
                       className="text-gray-500 hover:text-gray-900"
                     >
                       <svg
-                        className="w-5 h-5"
+                        className="w-8 h-8"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         aria-hidden="true"

@@ -138,7 +138,7 @@ const Footer = () => {
               Contact Us
             </Link>
             <Link
-              href="#team"
+              href="/about-us#team"
               className="mt-2 hover:underline px-2 text-md font-extralight text-white grid"
             >
               Team
@@ -204,7 +204,7 @@ const Footer = () => {
               Contact Us
             </Link>
             <Link
-              href="#team"
+              href="/about-us#team"
               className="mt-2 px-2 hover:underline text-md font-extralight text-white grid"
             >
               Team
