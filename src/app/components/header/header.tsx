@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Logo from '../../../../public/assets/enoobs_logo2.png';
+import { ArrowRight } from 'lucide-react';
 const Header = () => {
   const [showSidePanel, setShowSidePanel] = useState(false);
   const pathname = usePathname();
@@ -11,8 +12,8 @@ const Header = () => {
   return (
     <header
       className={`z-10 md:absolute lg:absolute relative top-0 w-full md:px-20 lg:px-20 px-10 py-5 flex justify-between font-inter ${
-        pathname === '/about-us'
-          ? 'bg-black'
+        pathname === '/about-us' || pathname === '/contact-us'
+          ? 'bg-dark-blue'
           : 'lg:bg-none md:bg-none bg-black lg:bg-unset md:bg-unset'
       }`}
     >
@@ -39,9 +40,14 @@ const Header = () => {
               <Link href="/about-us">About Us</Link>
             </div>
             <div className=" m-auto text-white p-3 font-light hover:font-bold hover:underline text-sm">
-              <Link href="/#contact-us">Contact Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </div>
-            {/* <div className="ml-4 text-white cursor-pointer text-sm py-3.5 px-6 rounded-full h-12 bg-main-green">{`Download`}</div> */}
+            <Link href={'https://beta-app.enoobs.com/'} target="_blank">
+              <div className="ml-4 flex text-white cursor-pointer text-sm py-2 px-3.5 rounded-full bg-main-green">
+                <span className="mt-px"> {`Join us now`}</span>
+                <ArrowRight className="ml-1" />
+              </div>
+            </Link>
           </div>
         </div>
         <div className={`flex md:hidden lg:hidden`}>

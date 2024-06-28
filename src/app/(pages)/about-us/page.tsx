@@ -46,7 +46,10 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section id="team" className="bg-white md:px-20 lg:px-20 px-10 py-10">
+      <section
+        id="team"
+        className="bg-light-gray md:px-20 lg:px-20 px-10 py-10"
+      >
         <div className="mx-auto max-w-screen-xl">
           <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
